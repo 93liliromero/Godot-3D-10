@@ -1,0 +1,93 @@
+[gd_scene format=3 uid="uid://d3wj3xfg85o67"]
+
+[node name="temporary stairs" type="Node3D" unique_id=877652557]
+
+[node name="Platform" type="CSGCylinder3D" parent="." unique_id=1768966526]
+transform = Transform3D(5.00353, 0, 0, 0, 0.3512135, 0, 0, 0, 5.0036564, -12, 1.0645007, -15.796587)
+use_collision = true
+sides = 15
+
+[node name="Platforms2" type="CSGCylinder3D" parent="." unique_id=1437339987]
+transform = Transform3D(5.00353, 0, 0, 0, 0.34969705, 0, 0, 0, 5.0036564, -12, 1.741, -14.333632)
+use_collision = true
+sides = 15
+
+[node name="Platforms3" type="CSGCylinder3D" parent="." unique_id=409997801]
+transform = Transform3D(5.00353, 0, 0, 0, 0.35180372, 0, 0, 0, 5.0036564, -12, 2.176, -12.6193695)
+use_collision = true
+sides = 15
+
+[node name="Platforms4" type="CSGCylinder3D" parent="." unique_id=524978063]
+transform = Transform3D(5.00353, 0, 0, 0, 0.354667, 0, 0, 0, 5.0036564, -12, 2.682, -11.111679)
+use_collision = true
+sides = 15
+
+[node name="Platforms5" type="CSGCylinder3D" parent="." unique_id=260081178]
+transform = Transform3D(5.00353, 0, 0, 0, 0.3517628, 0, 0, 0, 5.0036564, -12, 3.3588288, -9.73027)
+use_collision = true
+sides = 15
+
+[node name="Platforms6" type="CSGCylinder3D" parent="." unique_id=101341380]
+transform = Transform3D(5.00353, 0, 0, 0, 0.3498693, 0, 0, 0, 5.0036564, -12, 4.0818233, -7.4210153)
+use_collision = true
+sides = 15
+
+[node name="Platforms7" type="CSGCylinder3D" parent="." unique_id=1832607442]
+transform = Transform3D(5.00353, 0, 0, 0, 0.35644516, 0, 0, 0, 5.0036564, -12, 4.7709217, -6.5684814)
+use_collision = true
+sides = 15
+
+[node name="Platforms8" type="CSGCylinder3D" parent="." unique_id=1025566370]
+transform = Transform3D(5.00353, 0, 0, 0, 0.35352847, 0, 0, 0, 5.0036564, -12, 8.359716, -0.029266357)
+use_collision = true
+sides = 15
+
+[node name="Platforms9" type="CSGCylinder3D" parent="." unique_id=324984335]
+transform = Transform3D(5.00353, 0, 0, 0, 0.35568756, 0, 0, 0, 5.0036564, -12, 5.493041, -4.7126427)
+use_collision = true
+sides = 15
+
+[node name="Platforms10" type="CSGCylinder3D" parent="." unique_id=1646769246]
+transform = Transform3D(5.00353, 0, 0, 0, 0.35222977, 0, 0, 0, 5.0036564, -12, 6.917118, -2.3817196)
+use_collision = true
+sides = 15
+
+[node name="Platforms11" type="CSGCylinder3D" parent="." unique_id=1148415036]
+transform = Transform3D(5.00353, 0, 0, 0, 0.35217875, 0, 0, 0, 5.0036564, -12, 9.761776, 1.7402654)
+use_collision = true
+sides = 15
+
+[node name="Platforms12" type="CSGCylinder3D" parent="." unique_id=235627296]
+transform = Transform3D(5.00353, 0, 0, 0, 0.35043064, 0, 0, 0, 5.0036564, -11.185911, 10.425101, 2.2490864)
+use_collision = true
+sides = 15
+
+[node name="Platforms13" type="CSGCylinder3D" parent="." unique_id=876864086]
+transform = Transform3D(5.00353, 0, 0, 0, 0.35208338, 0, 0, 0, 5.0036564, -12, 9.061169, 0.96610975)
+use_collision = true
+sides = 15
+
+[node name="Platforms14" type="CSGCylinder3D" parent="." unique_id=1554951509]
+transform = Transform3D(5.00353, 0, 0, 0, 0.3587979, 0, 0, 0, 5.0036564, -12, 7.6229715, -1.0694599)
+use_collision = true
+sides = 15
+
+[node name="Platforms15" type="CSGCylinder3D" parent="." unique_id=391066368]
+transform = Transform3D(5.00353, 0, 0, 0, 0.35590655, 0, 0, 0, 5.0036564, -12, 6.1839733, -3.4409728)
+use_collision = true
+sides = 15
+
+[node name="Platforms16" type="CSGCylinder3D" parent="." unique_id=274618457]
+transform = Transform3D(5.00353, 0, 0, 0, 0.35628545, 0, 0, 0, 5.0036564, -9.7029, 11.152463, 2.6230202)
+use_collision = true
+sides = 15
+
+[node name="Platforms17" type="CSGCylinder3D" parent="." unique_id=605212078]
+transform = Transform3D(5.00353, 0, 0, 0, 0.35628545, 0, 0, 0, 5.0036564, -8.64872, 11.863581, 2.6230202)
+use_collision = true
+sides = 15
+
+[node name="Platforms18" type="CSGCylinder3D" parent="." unique_id=188603776]
+transform = Transform3D(5.00353, 0, 0, 0, 0.35628545, 0, 0, 0, 5.0036564, -7.5998163, 12.543146, 2.6230202)
+use_collision = true
+sides = 15

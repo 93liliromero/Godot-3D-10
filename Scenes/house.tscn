@@ -1,0 +1,274 @@
+[gd_scene format=3 uid="uid://cy4pndarm6ney"]
+
+[node name="house" type="Node3D" unique_id=22554623]
+
+[node name="house7" type="CSGBox3D" parent="." unique_id=1594586393]
+transform = Transform3D(26.824703, 0, 0, 0, 11.366263, 0, 0, 0, 1, 9.703238, 6, -24.48735)
+use_collision = true
+size = Vector3(1.1357422, 1, 1)
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="house7" unique_id=1111390983]
+transform = Transform3D(0.15770967, 0, 0, 0, -4.841791e-09, -0.8571425, 0, 1.2590096, -4.2585836e-07, -0.016145289, -0.24579996, -0.1363163)
+operation = 2
+sides = 15
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="house7" unique_id=1909528571]
+transform = Transform3D(0.15770967, 0, 0, 0, -4.841791e-09, -0.3084991, 0, 1.2590096, -1.5327318e-07, 0.27628624, 0.13624114, -0.1363163)
+operation = 2
+sides = 15
+
+[node name="CSGCylinder3D3" type="CSGCylinder3D" parent="house7" unique_id=1859505051]
+transform = Transform3D(0.15770967, 0, 0, 0, -4.841791e-09, -0.3084991, 0, 1.2590096, -1.5327318e-07, -0.33088106, 0.13624114, -0.1363163)
+operation = 2
+sides = 15
+
+[node name="house2" type="CSGBox3D" parent="." unique_id=855322758]
+transform = Transform3D(-1.172545e-06, 0, 1.0000001, 0, 11.366264, 0, -26.824703, 0, -4.3711392e-08, 24.328888, 6, -8.940372)
+use_collision = true
+size = Vector3(1.1357422, 1, 1)
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="house2" unique_id=2019580042]
+transform = Transform3D(0.15770966, 0, 1.5881868e-22, 0, -4.8417923e-09, -0.73110956, 1.4210855e-14, 1.2590097, -3.632408e-07, -0.01614526, -0.2978083, -0.1363163)
+operation = 2
+sides = 15
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="house2" unique_id=1849372067]
+transform = Transform3D(0.15770967, 0, 0, 0, -4.841791e-09, -0.3084991, 0, 1.2590096, -1.5327318e-07, 0.27628624, 0.13624114, -0.1363163)
+operation = 2
+sides = 15
+
+[node name="CSGCylinder3D3" type="CSGCylinder3D" parent="house2" unique_id=1778861428]
+transform = Transform3D(0.15770967, 0, 0, 0, -4.841791e-09, -0.3084991, 0, 1.2590096, -1.5327318e-07, -0.33088106, 0.13624114, -0.1363163)
+operation = 2
+sides = 15
+
+[node name="house" type="CSGBox3D" parent="." unique_id=348517259]
+transform = Transform3D(26.8247, 0, 0, 0, 11.366263, 0, 0, 0, 0.9999999, 9.954308, 6, 5.3544617)
+use_collision = true
+size = Vector3(1.1357422, 1, 1)
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="house" unique_id=2115873767]
+transform = Transform3D(0.15770967, 0, 0, 0, -4.841791e-09, -0.3084991, 0, 1.2590096, -1.5327318e-07, -0.016145289, 0.13624114, -0.1363163)
+operation = 2
+sides = 15
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="house" unique_id=1570941154]
+transform = Transform3D(0.15770967, 0, 0, 0, -4.841791e-09, -0.3084991, 0, 1.2590096, -1.5327318e-07, 0.27628624, 0.13624114, -0.1363163)
+operation = 2
+sides = 15
+
+[node name="CSGCylinder3D3" type="CSGCylinder3D" parent="house" unique_id=1486474430]
+transform = Transform3D(0.15770967, 0, 0, 0, -4.841791e-09, -0.3084991, 0, 1.2590096, -1.5327318e-07, -0.33088106, 0.13624114, -0.1363163)
+operation = 2
+sides = 15
+
+[node name="house3" type="CSGBox3D" parent="." unique_id=829479522]
+transform = Transform3D(-1.172545e-06, 0, 1.0000001, 0, 11.366264, 0, -26.824703, 0, -4.3711392e-08, -5.075329, 6, -8.940372)
+use_collision = true
+size = Vector3(1.1357422, 1, 1)
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="house3" unique_id=1819875018]
+transform = Transform3D(0.15770967, 0, 0, 0, -4.841791e-09, -0.3084991, 0, 1.2590096, -1.5327318e-07, -0.016145289, 0.13624114, -0.1363163)
+operation = 2
+sides = 15
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="house3" unique_id=1775540600]
+transform = Transform3D(0.15770967, 0, 0, 0, -4.841791e-09, -0.3084991, 0, 1.2590096, -1.5327318e-07, 0.27628624, 0.13624114, -0.1363163)
+operation = 2
+sides = 15
+
+[node name="CSGCylinder3D3" type="CSGCylinder3D" parent="house3" unique_id=1468363487]
+transform = Transform3D(0.15770967, 0, 0, 0, -4.841791e-09, -0.3084991, 0, 1.2590096, -1.5327318e-07, -0.33088106, 0.13624114, -0.1363163)
+operation = 2
+sides = 15
+
+[node name="house4" type="CSGBox3D" parent="." unique_id=180826908]
+transform = Transform3D(-1.172545e-06, 0, 1.0000001, 0, 11.366264, 0, -26.824703, 0, -4.3711392e-08, 44.7176, 6, -8.940372)
+use_collision = true
+size = Vector3(1.1357422, 1, 1)
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="house4" unique_id=1767645039]
+transform = Transform3D(0.15770967, 0, 0, 0, -4.841791e-09, -0.3084991, 0, 1.2590096, -1.5327318e-07, -0.016145289, 0.13624114, -0.1363163)
+operation = 2
+sides = 15
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="house4" unique_id=1134340406]
+transform = Transform3D(0.15770967, 0, 0, 0, -4.841791e-09, -0.3084991, 0, 1.2590096, -1.5327318e-07, 0.27628624, 0.13624114, -0.1363163)
+operation = 2
+sides = 15
+
+[node name="CSGCylinder3D3" type="CSGCylinder3D" parent="house4" unique_id=2051465493]
+transform = Transform3D(0.15770967, 0, 0, 0, -4.841791e-09, -0.3084991, 0, 1.2590096, -1.5327318e-07, -0.33088106, 0.13624114, -0.1363163)
+operation = 2
+sides = 15
+
+[node name="house5" type="CSGBox3D" parent="." unique_id=627777248]
+transform = Transform3D(21.698635, 0, 0, 0, 11.366263, 0, 0, 0, 0.9999999, 34.52127, 6, 5.3544617)
+use_collision = true
+size = Vector3(0.89416504, 1, 1)
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="house5" unique_id=1925744867]
+transform = Transform3D(0.15770967, 0, 0, 0, -4.841791e-09, -0.3084991, 0, 1.2590096, -1.5327318e-07, -0.016145289, 0.13624114, -0.1363163)
+operation = 2
+sides = 15
+
+[node name="house6" type="CSGBox3D" parent="." unique_id=1025402536]
+transform = Transform3D(21.698635, 0, 0, 0, 11.366263, 0, 0, 0, 0.9999999, 34.52127, 6, -23.922104)
+use_collision = true
+size = Vector3(0.89416504, 1, 1)
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="house6" unique_id=1510970269]
+transform = Transform3D(0.15770967, 0, 0, 0, -4.841791e-09, -0.3084991, 0, 1.2590096, -1.5327318e-07, -0.016145289, 0.13624114, -0.1363163)
+operation = 2
+sides = 15
+
+[node name="lightbulb" type="CSGSphere3D" parent="." unique_id=1860770162]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.834131, 8.59386, -9.119677)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lightbulb" unique_id=497484578]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.6657534, 0)
+light_energy = 4.995
+light_size = 0.718
+omni_range = 13.0
+
+[node name="lightbulb2" type="CSGSphere3D" parent="." unique_id=2011870062]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.260017, 10.155117, -9.119677)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lightbulb2" unique_id=673852209]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.607687, 0)
+omni_range = 13.0
+
+[node name="lightbulb3" type="CSGSphere3D" parent="." unique_id=1674843069]
+transform = Transform3D(1, 0, 0, 0, 0.9981476, 0.060839415, 0, -0.060839415, 0.9981476, 8.834131, 9.4023485, -25.922861)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lightbulb3" unique_id=537866194]
+transform = Transform3D(1, 0, 0, 0, 0.59451395, 0.8040852, 0, -0.8040852, 0.59451395, 0, -1.5075159, -0.085969925)
+omni_range = 13.0
+
+[node name="second floor" type="CSGBox3D" parent="." unique_id=718721710]
+transform = Transform3D(50.955044, 0, 0, 0, 1, 0, 0, 0, 31.70112, 19.47055, 12.035423, -9.031293)
+use_collision = true
+
+[node name="house8" type="CSGBox3D" parent="." unique_id=1214243788]
+transform = Transform3D(48.786594, 0, 0, 0, 11.366263, 0, 0, 0, 0.9999999, 22.650417, 18.235094, -23.922104)
+use_collision = true
+size = Vector3(0.89416504, 1, 1)
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="house8" unique_id=132190842]
+transform = Transform3D(0.09409063, 0, 0, 0, -4.8417905e-09, -0.30849907, 0, 1.2590096, -1.5327318e-07, -0.016145289, 0.1362412, -0.1363182)
+operation = 2
+sides = 15
+
+[node name="house9" type="CSGBox3D" parent="." unique_id=339748962]
+transform = Transform3D(48.786594, 0, 0, 0, 11.366263, 0, 0, 0, 0.9999999, 22.650417, 18.235094, 5.716406)
+use_collision = true
+size = Vector3(0.89416504, 1, 1)
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="house9" unique_id=1667724942]
+transform = Transform3D(0.09409063, 0, 0, 0, -4.8417905e-09, -0.30849907, 0, 1.2590096, -1.5327318e-07, -0.016145289, 0.1362412, -0.1363182)
+operation = 2
+sides = 15
+
+[node name="house10" type="CSGBox3D" parent="." unique_id=896385450]
+transform = Transform3D(-1.172545e-06, 0, 1.0000001, 0, 11.366264, 0, -26.824703, 0, -4.3711392e-08, 44.7176, 18.05183, -8.940372)
+use_collision = true
+size = Vector3(1.1357422, 1, 1)
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="house10" unique_id=301903578]
+transform = Transform3D(0.15770967, 0, 0, 0, -4.841791e-09, -0.3084991, 0, 1.2590096, -1.5327318e-07, -0.016145289, 0.13624114, -0.1363163)
+operation = 2
+sides = 15
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="house10" unique_id=23484144]
+transform = Transform3D(0.15770967, 0, 0, 0, -4.841791e-09, -0.3084991, 0, 1.2590096, -1.5327318e-07, 0.27628624, 0.13624114, -0.1363163)
+operation = 2
+sides = 15
+
+[node name="CSGCylinder3D3" type="CSGCylinder3D" parent="house10" unique_id=235891142]
+transform = Transform3D(0.15770967, 0, 0, 0, -4.841791e-09, -0.3084991, 0, 1.2590096, -1.5327318e-07, -0.33088106, 0.13624114, -0.1363163)
+operation = 2
+sides = 15
+
+[node name="house11" type="CSGBox3D" parent="." unique_id=759837287]
+transform = Transform3D(-1.172545e-06, 0, 1.0000001, 0, 11.366264, 0, -26.824703, 0, -4.3711392e-08, 27.794613, 18.05183, -8.940372)
+use_collision = true
+size = Vector3(1.1357422, 1, 1)
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="house11" unique_id=1343943408]
+transform = Transform3D(0.15770966, -8.881784e-16, 2.1175824e-22, 0, -4.8417927e-09, -0.70046455, 4.2632564e-14, 1.2590096, -3.4801525e-07, -0.01614526, -0.33516455, -0.1363163)
+operation = 2
+sides = 15
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="house11" unique_id=345495329]
+transform = Transform3D(0.15770967, 0, 0, 0, -4.841791e-09, -0.3084991, 0, 1.2590096, -1.5327318e-07, 0.27628624, 0.13624114, -0.1363163)
+operation = 2
+sides = 15
+
+[node name="CSGCylinder3D3" type="CSGCylinder3D" parent="house11" unique_id=1179515260]
+transform = Transform3D(0.15770967, 0, 0, 0, -4.841791e-09, -0.3084991, 0, 1.2590096, -1.5327318e-07, -0.33088106, 0.13624114, -0.1363163)
+operation = 2
+sides = 15
+
+[node name="house12" type="CSGBox3D" parent="." unique_id=363860897]
+transform = Transform3D(-1.172545e-06, 0, 1.0000001, 0, 11.366264, 0, -26.824703, 0, -4.3711392e-08, 0.8223152, 18.05183, -8.940372)
+use_collision = true
+size = Vector3(1.1357422, 1, 1)
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="house12" unique_id=2122493598]
+transform = Transform3D(0.15770966, -4.440892e-16, 5.293956e-23, 0, -4.841792e-09, -0.6594594, 1.4210855e-14, 1.2590096, -3.276425e-07, -0.01614526, -0.31445456, -0.1363163)
+operation = 2
+sides = 15
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="house12" unique_id=1997922515]
+transform = Transform3D(0.15770967, 0, 0, 0, -4.841791e-09, -0.3084991, 0, 1.2590096, -1.5327318e-07, 0.27628624, 0.13624114, -0.1363163)
+operation = 2
+sides = 15
+
+[node name="CSGCylinder3D3" type="CSGCylinder3D" parent="house12" unique_id=1998751037]
+transform = Transform3D(0.15770967, 0, 0, 0, -4.841791e-09, -0.3084991, 0, 1.2590096, -1.5327318e-07, -0.33088106, 0.13624114, -0.1363163)
+operation = 2
+sides = 15
+
+[node name="lightbulb8" type="CSGSphere3D" parent="." unique_id=271509198]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.96894455, 22.38055, -8.77182)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lightbulb8" unique_id=1281253802]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.3788385, 0)
+omni_range = 13.0
+
+[node name="lightbulb9" type="CSGSphere3D" parent="." unique_id=712602705]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.7573166, 10.432236, -8.77182)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lightbulb9" unique_id=1572262848]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.3788385, 0)
+omni_range = 13.0
+
+[node name="roof" type="CSGBox3D" parent="." unique_id=2037170050]
+transform = Transform3D(50.955044, 0, 0, 0, 1, 0, 0, 0, 31.70112, 19.435875, 23.708488, -9.031293)
+use_collision = true
+
+[node name="lightbulb10" type="CSGSphere3D" parent="." unique_id=1968568608]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.008535, 22.38055, -8.77182)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lightbulb10" unique_id=1779296699]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.3788385, 0)
+omni_range = 13.0
+
+[node name="lightbulb11" type="CSGSphere3D" parent="." unique_id=1252588088]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37.853714, 22.38055, -8.77182)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lightbulb11" unique_id=1494394138]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.3788385, 0)
+omni_range = 13.0
+
+[node name="lightbulb12" type="CSGSphere3D" parent="." unique_id=69650205]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 45.598316, 22.38055, -8.77182)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lightbulb12" unique_id=56534852]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.3788385, 0)
+omni_range = 13.0
+
+[node name="foundation" type="CSGBox3D" parent="." unique_id=1233183856]
+transform = Transform3D(50.955044, 0, 0, 0, 1, 0, 0, 0, 31.70112, 19.435875, -0.1049881, -9.590533)
+use_collision = true
+size = Vector3(1, 1, 1.0487671)

@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://db2t1a4n1wkmr"]
+
+[ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="1_f6udf"]
+[ext_resource type="PackedScene" uid="uid://bxbi1ij5mjwc7" path="res://Scenes/ground and fence.tscn" id="2_bo1nx"]
+[ext_resource type="PackedScene" uid="uid://cy4pndarm6ney" path="res://Scenes/house.tscn" id="3_8gbba"]
+[ext_resource type="PackedScene" uid="uid://d3wj3xfg85o67" path="res://Scenes/temporary stairs.tscn" id="4_jjvhh"]
+
+[node name="Main" type="Node3D" unique_id=524929674]
+
+[node name="ProtoController" parent="." unique_id=346002629 instance=ExtResource("1_f6udf")]
+transform = Transform3D(-0.99863774, 0, 0.052179147, 0, 1, 0, -0.052179147, 0, -0.99863774, 10.004586, 1.4489908, -31.47474)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=443552997]
+transform = Transform3D(1, 0, 0, 0, 0.99754566, 0.0700176, 0, -0.0700176, 0.99754566, 0, 66.1656, 0)
+
+[node name="ground and fence" parent="." unique_id=1091572372 instance=ExtResource("2_bo1nx")]
+
+[node name="house" parent="." unique_id=22554623 instance=ExtResource("3_8gbba")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4776077, 0)
+
+[node name="temporary stairs" parent="." unique_id=877652557 instance=ExtResource("4_jjvhh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.43717003, 0.18872643, 0)

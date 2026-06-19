@@ -1,0 +1,69 @@
+[gd_scene format=3 uid="uid://bxbi1ij5mjwc7"]
+
+[ext_resource type="Texture2D" uid="uid://dt3u2njy7fiif" path="res://Assets/textures/ground2d.png" id="2_8x34p"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_g6kap"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wgg7l"]
+albedo_texture = ExtResource("2_8x34p")
+metallic_specular = 0.0
+subsurf_scatter_enabled = true
+
+[node name="ground and fence" type="Node3D" unique_id=1091572372]
+
+[node name="Ground" type="CSGBox3D" parent="." unique_id=1144350613]
+transform = Transform3D(100, 0, 0, 0, 2.015, 0, 0, 0, 99.874, 0, 0, 0)
+use_collision = true
+
+[node name="dirt19DONTCHANGEITANYMORE" type="MeshInstance3D" parent="Ground" unique_id=129611849]
+transform = Transform3D(0.5005001, 0, 0, 0, 0.9999997, 0, 0, 0, 0.49290937, 0, 0.69, 0)
+mesh = SubResource("PlaneMesh_g6kap")
+surface_material_override/0 = SubResource("StandardMaterial3D_wgg7l")
+
+[node name="fence" type="CSGBox3D" parent="." unique_id=981633094]
+transform = Transform3D(42.649593, 0, 0, 0, 7.1280603, 0, 0, 0, 0.40263516, 0, 4.469243, 49.501)
+use_collision = true
+size = Vector3(2.310669, 1, 1)
+
+[node name="fence2" type="CSGBox3D" parent="." unique_id=1556033241]
+transform = Transform3D(43.009853, 0, 0, 0, 6.46, 0, 0, 0, 0.365, 0, 4.3214846, -49.635036)
+use_collision = true
+size = Vector3(2.310669, 1, 1)
+
+[node name="fence3" type="CSGBox3D" parent="." unique_id=87362711]
+transform = Transform3D(-1.8796165e-06, 0, 0.40263513, 0, 7.1280603, 0, -43.000614, 0, -1.759974e-08, -49.427135, 4.469243, -0.15061378)
+use_collision = true
+size = Vector3(2.310669, 1, 1)
+
+[node name="fence4" type="CSGBox3D" parent="." unique_id=1636678461]
+transform = Transform3D(-1.8796165e-06, 0, 0.40263513, 0, 7.1280603, 0, -43.000614, 0, -1.759974e-08, 49.184887, 4.469243, -0.15061378)
+use_collision = true
+size = Vector3(2.310669, 1, 1)
+
+[node name="fence lightbulb4" type="CSGSphere3D" parent="." unique_id=1847382837]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.1045885, -48.771694)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="fence lightbulb4" unique_id=1265486519]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.3788385, 0)
+omni_range = 13.0
+
+[node name="fence lightbulb2" type="CSGSphere3D" parent="." unique_id=423979554]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7.07174, 48.35773)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="fence lightbulb2" unique_id=83282549]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.6573515, 0)
+omni_range = 13.0
+
+[node name="fence lightbulb3" type="CSGSphere3D" parent="." unique_id=1490173761]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48.203293, 7.208659, 0)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="fence lightbulb3" unique_id=1782591357]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.2700272, 0)
+omni_range = 13.0
+
+[node name="fence lightbulb" type="CSGSphere3D" parent="." unique_id=1485416480]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 48.26622, 7.072, 0)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="fence lightbulb" unique_id=1310897393]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.6573515, 0)
+omni_range = 13.0
