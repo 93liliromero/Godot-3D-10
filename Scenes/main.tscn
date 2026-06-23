@@ -12,6 +12,7 @@ transform = Transform3D(-0.99863774, 0, 0.052179147, 0, 1, 0, -0.052179147, 0, -
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=443552997]
 transform = Transform3D(1, 0, 0, 0, 0.9484288, 0.31699017, 0, -0.31699017, 0.9484288, 0, 66.1656, 0)
+visible = false
 
 [node name="ground and fence" parent="." unique_id=1091572372 instance=ExtResource("2_bo1nx")]
 
