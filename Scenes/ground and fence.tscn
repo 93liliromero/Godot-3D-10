@@ -1,6 +1,9 @@
 [gd_scene format=3 uid="uid://bxbi1ij5mjwc7"]
 
 [ext_resource type="Texture2D" uid="uid://dt3u2njy7fiif" path="res://Assets/textures/ground2d.png" id="2_8x34p"]
+[ext_resource type="Texture2D" uid="uid://b7hvy32j856w" path="res://Assets/textures/housefoundation.png" id="2_g6kap"]
+[ext_resource type="Texture2D" uid="uid://cu06gnd0r6b5" path="res://Assets/textures/fence2d.png" id="2_wgg7l"]
+[ext_resource type="Texture2D" uid="uid://b2k2an0axjj33" path="res://Assets/textures/grass2D-2.png" id="3_g6kap"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_g6kap"]
 
@@ -9,6 +12,46 @@ albedo_texture = ExtResource("2_8x34p")
 metallic_specular = 0.0
 subsurf_scatter_enabled = true
 
+[sub_resource type="PlaneMesh" id="PlaneMesh_vptk3"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r2ejf"]
+albedo_texture = ExtResource("2_g6kap")
+metallic_specular = 0.0
+subsurf_scatter_enabled = true
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_r2ejf"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vptk3"]
+albedo_texture = ExtResource("3_g6kap")
+metallic_specular = 0.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lkfau"]
+albedo_texture = ExtResource("3_g6kap")
+metallic_specular = 0.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dpc3g"]
+albedo_texture = ExtResource("3_g6kap")
+metallic_specular = 0.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wnuga"]
+albedo_texture = ExtResource("3_g6kap")
+metallic_specular = 0.0
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_8x34p"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g6kap"]
+albedo_color = Color(0.5866749, 0.5866749, 0.5866748, 1)
+albedo_texture = ExtResource("2_wgg7l")
+metallic_specular = 0.0
+clearcoat_enabled = true
+clearcoat = 0.0
+clearcoat_roughness = 1.0
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_wgg7l"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8x34p"]
+albedo_texture = ExtResource("2_wgg7l")
+
 [node name="ground and fence" type="Node3D" unique_id=1091572372]
 
 [node name="Ground" type="CSGBox3D" parent="." unique_id=1144350613]
@@ -16,14 +59,50 @@ transform = Transform3D(100, 0, 0, 0, 2.015, 0, 0, 0, 99.874, 0, 0, 0)
 use_collision = true
 
 [node name="dirt19DONTCHANGEITANYMORE" type="MeshInstance3D" parent="Ground" unique_id=129611849]
-transform = Transform3D(0.5005001, 0, 0, 0, 0.9999997, 0, 0, 0, 0.49290937, 0, 0.69, 0)
+transform = Transform3D(0.5005001, 0, 0, 0, 0.9999997, 0, 0, 0, 0.49290937, 0, 0.6, 0)
 mesh = SubResource("PlaneMesh_g6kap")
 surface_material_override/0 = SubResource("StandardMaterial3D_wgg7l")
+
+[node name="housefoundation" type="MeshInstance3D" parent="Ground" unique_id=1931823318]
+transform = Transform3D(0.2559544, 0, 0, 0, 0.99999875, 0, 0, 0, 0.25606304, 0, 0.6099994, 0)
+visible = false
+mesh = SubResource("PlaneMesh_vptk3")
+surface_material_override/0 = SubResource("StandardMaterial3D_r2ejf")
+
+[node name="grass" type="MeshInstance3D" parent="Ground" unique_id=1873562299]
+transform = Transform3D(0.18870696, 0, 0, 0, 0.9999982, 0, 0, 0, 0.18984136, -0.2361122, 0.62, -0.23649675)
+mesh = SubResource("PlaneMesh_r2ejf")
+surface_material_override/0 = SubResource("StandardMaterial3D_vptk3")
+
+[node name="grass2" type="MeshInstance3D" parent="Ground" unique_id=826173879]
+transform = Transform3D(0.20427972, 0, 0, 0, 0.9999982, 0, 0, 0, 0.20894535, -0.23485774, 0.62, 0.24726915)
+mesh = SubResource("PlaneMesh_r2ejf")
+surface_material_override/0 = SubResource("StandardMaterial3D_lkfau")
+
+[node name="grass3" type="MeshInstance3D" parent="Ground" unique_id=2052879500]
+transform = Transform3D(0.1817542, 0, 0, 0, 1.2607758, 0, 0, 0, 0.19875516, 0.2472805, 0.62, 0.23843434)
+mesh = SubResource("PlaneMesh_r2ejf")
+surface_material_override/0 = SubResource("StandardMaterial3D_dpc3g")
+
+[node name="grass4" type="MeshInstance3D" parent="Ground" unique_id=1317590083]
+transform = Transform3D(0.15297426, 0, 0, 0, 0.9999982, 0, 0, 0, 0.19028637, 0.31954497, 0.62, -0.27131245)
+mesh = SubResource("PlaneMesh_r2ejf")
+surface_material_override/0 = SubResource("StandardMaterial3D_wnuga")
 
 [node name="fence" type="CSGBox3D" parent="." unique_id=981633094]
 transform = Transform3D(42.649593, 0, 0, 0, 7.1280603, 0, 0, 0, 0.40263516, 0, 4.469243, 49.501)
 use_collision = true
 size = Vector3(2.310669, 1, 1)
+
+[node name="color and texture" type="MeshInstance3D" parent="fence" unique_id=745819696]
+transform = Transform3D(1.1624476, 0, 0, 0, -4.371136e-08, -0.49311167, 0, 0.99999934, -2.1554596e-08, 0, 0, -245.1448)
+mesh = SubResource("PlaneMesh_8x34p")
+surface_material_override/0 = SubResource("StandardMaterial3D_g6kap")
+
+[node name="color and texture2" type="MeshInstance3D" parent="fence" unique_id=607025140]
+transform = Transform3D(1.1608545, 0.052335925, 1.1280806e-09, 0, -4.3711356e-08, 0.49311173, 0.06083781, -0.9986288, -2.1525057e-08, 0, 0, -0.6903763)
+mesh = SubResource("PlaneMesh_8x34p")
+surface_material_override/0 = SubResource("StandardMaterial3D_g6kap")
 
 [node name="fence2" type="CSGBox3D" parent="." unique_id=1556033241]
 transform = Transform3D(43.009853, 0, 0, 0, 6.46, 0, 0, 0, 0.365, 0, 4.3214846, -49.635036)
@@ -35,13 +114,23 @@ transform = Transform3D(-1.8796165e-06, 0, 0.40263513, 0, 7.1280603, 0, -43.0006
 use_collision = true
 size = Vector3(2.310669, 1, 1)
 
+[node name="color and texture" type="MeshInstance3D" parent="fence3" unique_id=471417598]
+transform = Transform3D(1.1602981, 2.9115602e-08, 6.938894e-18, 2.62537e-08, -0.086198054, 0.46825394, 9.797759e-08, -0.3216955, -0.12546828, -9.9884346e-08, 0, 244.20355)
+mesh = SubResource("PlaneMesh_wgg7l")
+surface_material_override/0 = SubResource("StandardMaterial3D_8x34p")
+
+[node name="color and texture2" type="MeshInstance3D" parent="fence3" unique_id=644037212]
+transform = Transform3D(1.160298, 0, -3.6983618e-11, -8.851998e-11, -1.45577825e-08, -0.48477215, -1.364242e-12, 0.33304372, -2.1190031e-08, -2.3283064e-10, 0, 0.63588715)
+mesh = SubResource("PlaneMesh_wgg7l")
+surface_material_override/0 = SubResource("StandardMaterial3D_8x34p")
+
 [node name="fence4" type="CSGBox3D" parent="." unique_id=1636678461]
 transform = Transform3D(-1.8796165e-06, 0, 0.40263513, 0, 7.1280603, 0, -43.000614, 0, -1.759974e-08, 49.184887, 4.469243, -0.15061378)
 use_collision = true
 size = Vector3(2.310669, 1, 1)
 
 [node name="fence lightbulb4" type="CSGSphere3D" parent="." unique_id=1847382837]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.1045885, -48.771694)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7.0023108, -48.771694)
 
 [node name="OmniLight3D" type="OmniLight3D" parent="fence lightbulb4" unique_id=1265486519]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.3788385, 0)

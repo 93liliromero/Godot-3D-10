@@ -11,12 +11,12 @@
 transform = Transform3D(-0.99863774, 0, 0.052179147, 0, 1, 0, -0.052179147, 0, -0.99863774, 10.004586, 1.4489908, -31.47474)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=443552997]
-transform = Transform3D(1, 0, 0, 0, 0.99754566, 0.0700176, 0, -0.0700176, 0.99754566, 0, 66.1656, 0)
+transform = Transform3D(1, 0, 0, 0, 0.9484288, 0.31699017, 0, -0.31699017, 0.9484288, 0, 66.1656, 0)
 
 [node name="ground and fence" parent="." unique_id=1091572372 instance=ExtResource("2_bo1nx")]
 
 [node name="house" parent="." unique_id=22554623 instance=ExtResource("3_8gbba")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4776077, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.336, 0.5407871, 8.753)
 
 [node name="temporary stairs" parent="." unique_id=877652557 instance=ExtResource("4_jjvhh")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.43717003, 0.18872643, 0)
+transform = Transform3D(-0.07440442, 0, -0.9972281, 0, 1, 0, 0.9972281, 0, -0.07440442, -18.190956, 0.18872643, -5.1084538)

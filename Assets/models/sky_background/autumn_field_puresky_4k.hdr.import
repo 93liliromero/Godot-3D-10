@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bgoakk1aahx6y"
-path="res://.godot/imported/popcorn wall.jpg-b2646948c6f6237045df47f858f28a4c.ctex"
+uid="uid://2rhdc6ee1fq8"
+path="res://.godot/imported/autumn_field_puresky_4k.hdr-551dbf71e011b5a6352e902988d6b7a3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/textures/popcorn wall.jpg"
-dest_files=["res://.godot/imported/popcorn wall.jpg-b2646948c6f6237045df47f858f28a4c.ctex"]
+source_file="res://Assets/models/sky_background/autumn_field_puresky_4k.hdr"
+dest_files=["res://.godot/imported/autumn_field_puresky_4k.hdr-551dbf71e011b5a6352e902988d6b7a3.ctex"]
 
 [params]
 

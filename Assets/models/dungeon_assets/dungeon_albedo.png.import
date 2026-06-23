@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bgoakk1aahx6y"
-path="res://.godot/imported/popcorn wall.jpg-b2646948c6f6237045df47f858f28a4c.ctex"
+uid="uid://15e0cpor1gkc"
+path="res://.godot/imported/dungeon_albedo.png-79611eceff77d6dbcacf7c43e4d904a1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/textures/popcorn wall.jpg"
-dest_files=["res://.godot/imported/popcorn wall.jpg-b2646948c6f6237045df47f858f28a4c.ctex"]
+source_file="res://Assets/models/dungeon_assets/dungeon_albedo.png"
+dest_files=["res://.godot/imported/dungeon_albedo.png-79611eceff77d6dbcacf7c43e4d904a1.ctex"]
 
 [params]
 

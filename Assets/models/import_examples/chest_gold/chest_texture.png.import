@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bgoakk1aahx6y"
-path="res://.godot/imported/popcorn wall.jpg-b2646948c6f6237045df47f858f28a4c.ctex"
+uid="uid://dv5kox2jan2jm"
+path="res://.godot/imported/chest_texture.png-5517fc31a5836d34df7e8284831238fc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/textures/popcorn wall.jpg"
-dest_files=["res://.godot/imported/popcorn wall.jpg-b2646948c6f6237045df47f858f28a4c.ctex"]
+source_file="res://Assets/models/import_examples/chest_gold/chest_texture.png"
+dest_files=["res://.godot/imported/chest_texture.png-5517fc31a5836d34df7e8284831238fc.ctex"]
 
 [params]
 
