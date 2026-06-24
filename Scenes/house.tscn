@@ -51,6 +51,15 @@ metallic_specular = 0.0
 albedo_color = Color(0.78031605, 1, 1, 1)
 albedo_texture = ExtResource("1_okrnj")
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2s1ff"]
+albedo_color = Color(0.15873212, 0.0003448809, 0.32015735, 1)
+albedo_texture = ExtResource("2_3jr7h")
+metallic = 1.0
+metallic_specular = 1.0
+roughness = 0.0
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_llf5m"]
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l3jqw"]
 albedo_color = Color(0.98937523, 0.881864, 1, 1)
 albedo_texture = ExtResource("1_okrnj")
@@ -298,6 +307,21 @@ operation = 2
 [node name="CSGBox3D2" type="CSGBox3D" parent="L1 Walls/L1wall6" unique_id=1600039815]
 transform = Transform3D(0.10130043, 0, 0, 0, 0.7077457, 0, 2.842171e-14, 0, 2.5905805, 0.087181225, -0.19889385, 0.5172882)
 operation = 2
+
+[node name="MeshInstance3D7" type="MeshInstance3D" parent="L1 Walls/L1wall6" unique_id=936911768]
+transform = Transform3D(1.9692556e-09, 1.0000331, 3.0047246e-08, 0.045051318, -4.371284e-08, 0, 1.721641e-16, 8.7427225e-08, -0.34370038, 0.43722683, -0.15359995, -0.21408463)
+material_override = SubResource("StandardMaterial3D_2s1ff")
+mesh = SubResource("PlaneMesh_llf5m")
+
+[node name="MeshInstance3D8" type="MeshInstance3D" parent="L1 Walls/L1wall6" unique_id=1769391955]
+transform = Transform3D(1.9692556e-09, 1.0000331, 3.0047246e-08, 0.045051318, -4.371284e-08, 0, 1.7216453e-16, 8.7427225e-08, -0.34370038, 0.43722683, -0.018342435, -0.21408463)
+material_override = SubResource("StandardMaterial3D_2s1ff")
+mesh = SubResource("PlaneMesh_llf5m")
+
+[node name="MeshInstance3D9" type="MeshInstance3D" parent="L1 Walls/L1wall6" unique_id=1086949167]
+transform = Transform3D(1.9692556e-09, 1.0000331, 3.0047246e-08, 0.045051318, -4.371284e-08, 0, 1.721641e-16, 8.7427225e-08, -0.34370038, 0.43722683, -0.28934482, -0.21408463)
+material_override = SubResource("StandardMaterial3D_2s1ff")
+mesh = SubResource("PlaneMesh_llf5m")
 
 [node name="L1wall2" type="CSGBox3D" parent="L1 Walls" unique_id=1920351225]
 transform = Transform3D(42.482716, 0, 0, 0, 9.999804, 0, 0, 0, 0.8799827, 19.722298, 6, 15.516106)

@@ -5,10 +5,11 @@
 [ext_resource type="PackedScene" uid="uid://cy4pndarm6ney" path="res://Scenes/house.tscn" id="3_8gbba"]
 [ext_resource type="PackedScene" uid="uid://d3wj3xfg85o67" path="res://Scenes/temporary stairs.tscn" id="4_jjvhh"]
 [ext_resource type="PackedScene" uid="uid://ccsf3266k7vkv" path="res://Scenes/door.tscn" id="5_kry3j"]
+[ext_resource type="PackedScene" uid="uid://dyjy225grxi0d" path="res://Scenes/door_swing.tscn" id="6_21xkr"]
 
 [node name="Main" type="Node3D" unique_id=524929674]
 
-[node name="ProtoController" parent="." unique_id=346002629 instance=ExtResource("1_f6udf")]
+[node name="ProtoController" parent="." unique_id=346002629 groups=["player"] instance=ExtResource("1_f6udf")]
 transform = Transform3D(-0.99863774, 0, 0.052179147, 0, 1, 0, -0.052179147, 0, -0.99863774, 10.004586, 1.4489908, -31.47474)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=443552997]
@@ -18,10 +19,13 @@ visible = false
 [node name="ground and fence" parent="." unique_id=1091572372 instance=ExtResource("2_bo1nx")]
 
 [node name="house" parent="." unique_id=22554623 instance=ExtResource("3_8gbba")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.336, 0.5407871, 8.753)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.336384, 0.53857076, 8.754321)
 
 [node name="temporary stairs" parent="." unique_id=877652557 instance=ExtResource("4_jjvhh")]
 transform = Transform3D(-0.07440442, 0, -0.9972281, 0, 1, 0, 0.9972281, 0, -0.07440442, -18.190956, 0.18872643, -5.1084538)
 
 [node name="Door" parent="." unique_id=285679454 instance=ExtResource("5_kry3j")]
-transform = Transform3D(-4.175887, 0, -6.650117e-07, 0, 6.236046, 0, 3.6506762e-07, 0, -7.6068473, 5.121232, 4.6183667, -20.836683)
+transform = Transform3D(-1.8253382e-07, 0, 7.9386306, 0, 6.5632753, 0, -4.175887, 0, -3.4700858e-07, 0.28175712, 4.842844, 23.989521)
+
+[node name="door_swing" parent="." unique_id=470081655 instance=ExtResource("6_21xkr")]
+transform = Transform3D(-3.045596, 0, -7.075886e-07, 0, 6.1541505, 0, 2.6625443e-07, 0, -8.093871, 4.6252723, 4.547665, -18.593655)

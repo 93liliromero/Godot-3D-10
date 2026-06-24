@@ -91,27 +91,27 @@ material_override = SubResource("StandardMaterial3D_8c32u")
 mesh = SubResource("PlaneMesh_kj2pw")
 
 [node name="MeshInstance3D5" type="MeshInstance3D" parent="CSGBox3D" unique_id=153027201]
-transform = Transform3D(1.05842895e-16, 4.3711363e-08, -0.2858157, 0.055395205, -4.3711335e-08, 0, -2.4214029e-09, -0.9999995, -1.2493399e-08, 0.001, 0, -0.517)
+transform = Transform3D(1.05842895e-16, 4.3711363e-08, -0.2858157, 0.0553952, -4.371133e-08, 0, -2.4214026e-09, -0.9999995, -1.2493398e-08, 0.3, 0, -0.51)
 material_override = SubResource("StandardMaterial3D_kj2pw")
 mesh = SubResource("PlaneMesh_8c32u")
 
 [node name="MeshInstance3D6" type="MeshInstance3D" parent="CSGBox3D" unique_id=1557871949]
-transform = Transform3D(1.05842895e-16, 4.3711363e-08, -0.2858157, 0.0553952, -4.371133e-08, 0, -2.4214026e-09, -0.9999995, -1.2493398e-08, 0.001, 0.25, -0.517)
+transform = Transform3D(1.05842895e-16, 4.3711363e-08, -0.2858157, 0.0553952, -4.371133e-08, 0, -2.4214026e-09, -0.9999995, -1.2493398e-08, 0.3, 0.25, -0.51)
 material_override = SubResource("StandardMaterial3D_kj2pw")
 mesh = SubResource("PlaneMesh_8c32u")
 
 [node name="MeshInstance3D7" type="MeshInstance3D" parent="CSGBox3D" unique_id=518431105]
-transform = Transform3D(1.05842895e-16, 4.3711363e-08, -0.2858157, 0.0553952, -4.371133e-08, 0, -2.4214026e-09, -0.9999995, -1.2493398e-08, 0.001, -0.25, -0.517)
+transform = Transform3D(1.05842895e-16, 4.3711363e-08, -0.2858157, 0.055395182, -4.3711314e-08, 0, -2.4214015e-09, -0.9999995, -1.2493394e-08, 0.3, -0.25, -0.51)
 material_override = SubResource("StandardMaterial3D_kj2pw")
 mesh = SubResource("PlaneMesh_8c32u")
 
 [node name="CSGCylinder3D" type="CSGCylinder3D" parent="." unique_id=1776381891]
-transform = Transform3D(-1.2834815e-09, 0.42062643, 0, -0.029362636, -1.8386165e-08, 0, 0, 0, 0.030305954, 0, 0.022, 0.181)
+transform = Transform3D(-1.2834815e-09, 0.42062643, 0, -0.029362636, -1.8386165e-08, 0, 0, 0, 0.030305954, 0, 0, 0.181)
 material_override = SubResource("StandardMaterial3D_ab4ky")
 height = 0.48179626
 
 [node name="CSGSphere3D" type="CSGSphere3D" parent="." unique_id=1179018625]
-transform = Transform3D(0.06812919, 0, 0, 0, 0.07045141, 0, 0, 0, 0.06972607, -0.095081136, 0.023158692, 0.18710473)
+transform = Transform3D(0.06812919, 0, 0, 0, 0.07045141, 0, 0, 0, 0.06972607, -0.095, 0, 0.187)
 material_override = SubResource("StandardMaterial3D_a43ba")
 use_collision = true
 
@@ -123,20 +123,20 @@ use_collision = true
 size = Vector3(1.7768555, 0.63131714, 1)
 
 [node name="CSGSphere3D2" type="CSGSphere3D" parent="." unique_id=1144281016]
-transform = Transform3D(0.06812919, 0, 0, 0, 0.07045141, 0, 0, 0, 0.06972607, 0.09647656, 0.023158692, 0.18710473)
+transform = Transform3D(0.06812919, 0, 0, 0, 0.07045141, 0, 0, 0, 0.06972607, 0.096, 0, 0.187)
 material_override = SubResource("StandardMaterial3D_a43ba")
 
 [node name="CSGCylinder3D2" type="CSGCylinder3D" parent="." unique_id=1635075136]
-transform = Transform3D(-0.029362632, -2.1299826e-08, 0, 2.5669629e-09, -0.2436416, 0, 0, 0, 0.030305954, 0, 0, -0.26815417)
+transform = Transform3D(-0.029362632, -2.1299826e-08, 0, 2.5669629e-09, -0.2436416, 0, 0, 0, 0.030305954, 0.06337547, 0, -0.25)
 material_override = SubResource("StandardMaterial3D_ovubi")
 height = 0.48179626
 
 [node name="CSGCylinder3D3" type="CSGCylinder3D" parent="." unique_id=1142350611]
-transform = Transform3D(-0.029362632, -2.1299826e-08, 0, 2.5669629e-09, -0.2436416, 0, 0, 0, 0.030305954, 0, -0.25, -0.268)
+transform = Transform3D(-0.029362632, -2.1299826e-08, 0, 2.5669629e-09, -0.2436416, 0, 0, 0, 0.030305954, 0.06260313, -0.25, -0.25302765)
 material_override = SubResource("StandardMaterial3D_ovubi")
 height = 0.48179626
 
 [node name="CSGCylinder3D4" type="CSGCylinder3D" parent="." unique_id=200671460]
-transform = Transform3D(-0.029362632, -2.1299826e-08, 0, 2.5669629e-09, -0.2436416, 0, 0, 0, 0.030305954, 0, 0.25, -0.268)
+transform = Transform3D(-0.029362632, -2.1299826e-08, 0, 2.5669629e-09, -0.2436416, 0, 0, 0, 0.030305954, 0.063, 0.25, -0.25)
 material_override = SubResource("StandardMaterial3D_ovubi")
 height = 0.48179626

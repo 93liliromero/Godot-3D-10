@@ -70,7 +70,7 @@ mesh = SubResource("PlaneMesh_vptk3")
 surface_material_override/0 = SubResource("StandardMaterial3D_r2ejf")
 
 [node name="grass" type="MeshInstance3D" parent="Ground" unique_id=1873562299]
-transform = Transform3D(0.18870696, 0, 0, 0, 0.9999982, 0, 0, 0, 0.18984136, -0.2361122, 0.62, -0.23649675)
+transform = Transform3D(0.2338718, 0, 0, 0, 0.9999982, 0, 0, 0, 0.18984136, -0.17901476, 0.62, -0.23649675)
 mesh = SubResource("PlaneMesh_r2ejf")
 surface_material_override/0 = SubResource("StandardMaterial3D_vptk3")
 
