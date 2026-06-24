@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://dpmht5tw8ti8c"]
+
+[ext_resource type="Texture2D" uid="uid://3ynryp64hpms" path="res://Assets/textures/glass_pane.png" id="1_j5ep5"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_juos7"]
+albedo_texture = ExtResource("1_j5ep5")
+metallic = 1.0
+metallic_specular = 1.0
+roughness = 0.0
+emission_enabled = true
+emission_energy_multiplier = 5.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l7y8j"]
+albedo_color = Color(0.8905402, 0.7700058, 0, 1)
+albedo_texture = ExtResource("1_j5ep5")
+metallic = 1.0
+metallic_specular = 1.0
+roughness = 0.1
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_x55h6"]
+albedo_texture = ExtResource("1_j5ep5")
+emission_enabled = true
+emission_energy_multiplier = 5.0
+
+[node name="Light_Bulb_Off" type="Node3D" unique_id=650262192]
+
+[node name="Light_Bulb_1" type="CSGSphere3D" parent="." unique_id=566511875]
+material_override = SubResource("StandardMaterial3D_juos7")
+transparency = 0.25
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Light_Bulb_1" unique_id=910281202]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.2736371)
+light_energy = 3.0
+omni_range = 13.0
+
+[node name="1" type="CSGCylinder3D" parent="." unique_id=698499828]
+transform = Transform3D(0.4108689, 0, 0, 0, -1.614932e-08, 0.39890227, 0, -0.3694534, -1.7436573e-08, 0, 0, -0.6715118)
+material_override = SubResource("StandardMaterial3D_l7y8j")
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="." unique_id=1014284140]
+transform = Transform3D(0.3426311, 0, 0, 0, 0.27419725, 0, 0, 0, 0.3134307, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_x55h6")
