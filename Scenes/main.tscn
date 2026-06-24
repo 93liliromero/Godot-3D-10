@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://d3wj3xfg85o67" path="res://Scenes/temporary stairs.tscn" id="4_jjvhh"]
 [ext_resource type="PackedScene" uid="uid://ccsf3266k7vkv" path="res://Scenes/door.tscn" id="5_kry3j"]
 [ext_resource type="PackedScene" uid="uid://dyjy225grxi0d" path="res://Scenes/door_swing.tscn" id="6_21xkr"]
+[ext_resource type="PackedScene" uid="uid://cxfgqlxa7rdye" path="res://Scenes/light_bulbs.tscn" id="7_6bp64"]
 
 [node name="Main" type="Node3D" unique_id=524929674]
 
@@ -24,8 +25,35 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.336384, 0.53857076, 8.754
 [node name="temporary stairs" parent="." unique_id=877652557 instance=ExtResource("4_jjvhh")]
 transform = Transform3D(-0.07440442, 0, -0.9972281, 0, 1, 0, 0.9972281, 0, -0.07440442, -18.190956, 0.18872643, -5.1084538)
 
-[node name="Door" parent="." unique_id=285679454 instance=ExtResource("5_kry3j")]
-transform = Transform3D(-1.8253382e-07, 0, 7.9386306, 0, 6.5632753, 0, -4.175887, 0, -3.4700858e-07, 0.28175712, 4.842844, 23.989521)
+[node name="Door_Swing" type="Node3D" parent="." unique_id=458851948]
 
-[node name="door_swing" parent="." unique_id=470081655 instance=ExtResource("6_21xkr")]
-transform = Transform3D(-3.045596, 0, -7.075886e-07, 0, 6.1541505, 0, 2.6625443e-07, 0, -8.093871, 4.6252723, 4.547665, -18.593655)
+[node name="door_swing" parent="Door_Swing" unique_id=470081655 instance=ExtResource("6_21xkr")]
+transform = Transform3D(-6.454126, 0, -7.0758864e-07, 0, 6.1541505, 0, 5.6423755e-07, 0, -8.093872, 4.6252723, 4.547665, -18.540304)
+
+[node name="door_swing2" parent="Door_Swing" unique_id=2091457580 instance=ExtResource("6_21xkr")]
+transform = Transform3D(8.089437, 0, 0, 0, 6.402175, 0, 0, 0, 8.108113, 5.356205, 4.5559626, -6.2570777)
+
+[node name="door_swing3" parent="Door_Swing" unique_id=1918062239 instance=ExtResource("6_21xkr")]
+transform = Transform3D(-2.8202874e-07, 0, -8.09387, 0, 6.1541505, 0, 6.452065, 0, -3.5379432e-07, 12.068965, 4.547665, 7.2075863)
+
+[node name="door_swing4" parent="Door_Swing" unique_id=1675699019 instance=ExtResource("6_21xkr")]
+transform = Transform3D(-3.2019236e-07, 0, 8.093872, 0, 6.600262, 0, -7.325147, 0, -3.5379438e-07, -1.7807249, 4.7768497, 23.861727)
+
+[node name="Door" parent="Door_Swing" unique_id=285679454 instance=ExtResource("5_kry3j")]
+transform = Transform3D(-1.8253382e-07, 0, 7.9386306, 0, 6.5632753, 0, -4.175887, 0, -3.4700858e-07, 40.124767, 4.842844, 48.322872)
+visible = false
+
+[node name="door_swing5" parent="Door_Swing" unique_id=1891231986 instance=ExtResource("6_21xkr")]
+transform = Transform3D(8.313524, 0, 0, 0, 8.16227, 0, 0, 0, 10.437246, 3.7545357, 16.807928, -5.0907803)
+
+[node name="door_swing6" parent="Door_Swing" unique_id=1725941226 instance=ExtResource("6_21xkr")]
+transform = Transform3D(-8.313524, 0, -7.70182e-07, 0, 8.16227, 0, 7.2679137e-07, 0, -8.809854, 18.64146, 16.807928, 9.600944)
+
+[node name="door_swing7" parent="Door_Swing" unique_id=1288855930 instance=ExtResource("6_21xkr")]
+transform = Transform3D(-3.6339569e-07, 0, 9.353224, 0, 8.248807, 0, -8.313524, 0, -4.088424e-07, 8.811162, 16.953201, -9.497322)
+
+[node name="door_swing8" parent="Door_Swing" unique_id=408846801 instance=ExtResource("6_21xkr")]
+transform = Transform3D(-3.6339569e-07, 0, 9.097306, 0, 8.442807, 0, -8.313524, 0, -3.9765587e-07, -19.067167, 16.90946, 4.411272)
+
+[node name="Light_Bulb_On" parent="." unique_id=19867042 instance=ExtResource("7_6bp64")]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -14.963512, 22.888617, 14.286583)

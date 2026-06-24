@@ -176,6 +176,7 @@ omni_range = 13.0
 
 [node name="lightbulb2" type="CSGSphere3D" parent="all_lightbulbs" unique_id=2011870062]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.260017, 10.155117, -11.108815)
+visible = false
 
 [node name="OmniLight3D" type="OmniLight3D" parent="all_lightbulbs/lightbulb2" unique_id=673852209]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.607687, 0)
@@ -211,7 +212,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.3788385, 0)
 omni_range = 13.0
 
 [node name="lightbulb11" type="CSGSphere3D" parent="all_lightbulbs" unique_id=1252588088]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.13861, 22.38055, -18.54403)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.13861, 22.38055, -18.865944)
 
 [node name="OmniLight3D" type="OmniLight3D" parent="all_lightbulbs/lightbulb11" unique_id=1494394138]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.3788385, 0)
@@ -301,12 +302,14 @@ use_collision = true
 size = Vector3(1.2063599, 1, 1)
 
 [node name="CSGBox3D" type="CSGBox3D" parent="L1 Walls/L1wall6" unique_id=788672611]
-transform = Transform3D(0.10130043, 0, 0, 0, 0.7077457, 0, 2.842171e-14, 0, 2.5905805, 0.48717523, -0.19889385, 0.5172882)
+transform = Transform3D(0.10130043, 0, 0, 0, 0.7077457, 0, 2.842171e-14, 0, 2.5905805, 0.485775, -0.20204726, 0.5172882)
 operation = 2
+size = Vector3(0.9723511, 0.99108887, 1)
 
 [node name="CSGBox3D2" type="CSGBox3D" parent="L1 Walls/L1wall6" unique_id=1600039815]
-transform = Transform3D(0.10130043, 0, 0, 0, 0.7077457, 0, 2.842171e-14, 0, 2.5905805, 0.087181225, -0.19889385, 0.5172882)
+transform = Transform3D(0.10130043, 0, 0, 0, 0.7077457, 0, 2.842171e-14, 0, 2.5905805, 0.08772533, -0.19889385, 0.5172882)
 operation = 2
+size = Vector3(0.9892578, 1, 1)
 
 [node name="MeshInstance3D7" type="MeshInstance3D" parent="L1 Walls/L1wall6" unique_id=936911768]
 transform = Transform3D(1.9692556e-09, 1.0000331, 3.0047246e-08, 0.045051318, -4.371284e-08, 0, 1.721641e-16, 8.7427225e-08, -0.34370038, 0.43722683, -0.15359995, -0.21408463)
@@ -334,10 +337,6 @@ transform = Transform3D(0.23034051, 0, 0, 0, -4.371133e-08, -0.50398576, 0, 0.99
 mesh = SubResource("PlaneMesh_n87ef")
 surface_material_override/0 = SubResource("StandardMaterial3D_3jr7h")
 
-[node name="CSGBox3D" type="CSGBox3D" parent="L1 Walls/L1wall2" unique_id=853564036]
-transform = Transform3D(0.10036525, 0, 0, 0, 0.69523495, 0, 0, 0, 1.0000004, 0, -0.19714859, 0)
-operation = 2
-
 [node name="exterior color and texture2" type="MeshInstance3D" parent="L1 Walls/L1wall2" unique_id=1586161345]
 transform = Transform3D(0.26669607, 0, 0, 0, -4.371133e-08, -0.50398576, 0, 0.99999964, -2.2029921e-08, -0.31402948, 0, 0.5651684)
 mesh = SubResource("PlaneMesh_n87ef")
@@ -352,6 +351,11 @@ surface_material_override/0 = SubResource("StandardMaterial3D_3jr7h")
 transform = Transform3D(0.03104635, 0, 0, 0, -4.3711346e-08, -0.34178385, 0, 1.0000004, -1.4939848e-08, 0.081743926, -0.15006563, 0.5651684)
 mesh = SubResource("PlaneMesh_n87ef")
 surface_material_override/0 = SubResource("StandardMaterial3D_3jr7h")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="L1 Walls/L1wall2" unique_id=1740435855]
+transform = Transform3D(0.10130043, 0, 0, 0, 0.70774573, 0, 2.842172e-14, 0, 2.5905805, 0.0013313591, -0.20204738, 0.5172882)
+operation = 2
+size = Vector3(0.9723511, 0.99108887, 1)
 
 [node name="L1wall3" type="CSGBox3D" parent="L1 Walls" unique_id=1886927915]
 transform = Transform3D(-1.8958361e-06, 0, 0.88, 0, 10, 0, -43.371677, 0, -3.8466023e-08, -4.1775494, 6, -9.4380455)
@@ -382,9 +386,9 @@ transform = Transform3D(0.8921897, 0, 0, 0, 0.79866827, 0, 0, 0, 3.649406, -0.49
 operation = 2
 
 [node name="CSGBox3D2" type="CSGBox3D" parent="L1 Walls/L1wall4" unique_id=1364767922]
-transform = Transform3D(0.31631517, 0, 0, 0, 0.75103796, 0, 0, 0, 1, 0.46956456, -0.2021757, 0)
+transform = Transform3D(0.31631517, 0, 0, 0, 0.75103796, 0, 0, 0, 1, 0.49047816, -0.23611999, 0)
 operation = 2
-size = Vector3(0.8149414, 1, 1)
+size = Vector3(0.68270874, 0.90960693, 1)
 
 [node name="L1wall5" type="CSGBox3D" parent="L1 Walls" unique_id=1178572919]
 transform = Transform3D(21.834421, 0, 0, 0, 10, 0, 0, 0, 0.88, 34.181107, 6, -23.922104)
@@ -443,9 +447,9 @@ operation = 2
 sides = 15
 
 [node name="CSGBox3D" type="CSGBox3D" parent="L2_Walls/L2wall3" unique_id=1108447475]
-transform = Transform3D(1, 0, -2.6645353e-14, 0, 1.0000001, 0, -1.8417268e-11, 0, 1, -0.31002998, -0.18374646, 0)
+transform = Transform3D(1, 0, -2.797762e-14, 0, 1.0000001, 0, -1.9326762e-11, 0, 1, -0.31002998, -0.17146313, 0)
 operation = 2
-size = Vector3(0.16666794, 0.6325073, 1)
+size = Vector3(0.16666794, 0.657074, 1)
 
 [node name="L2wall5" type="CSGBox3D" parent="L2_Walls" unique_id=363860897]
 transform = Transform3D(-1.172545e-06, 0, 1.0000001, 0, 11.366264, 0, -26.824703, 0, -4.3711392e-08, -4.6112146, 18.05183, -18.841003)
@@ -469,10 +473,10 @@ material_override = SubResource("StandardMaterial3D_a7v5j")
 use_collision = true
 size = Vector3(1.1357422, 1, 1)
 
-[node name="CSGCylinder3D" type="CSGCylinder3D" parent="L2_Walls/L2wall4" unique_id=1343943408]
-transform = Transform3D(0.15770966, -1.5543122e-15, 2.1175824e-22, 0, -4.8417927e-09, -0.7004647, 8.526513e-14, 1.2590096, -3.4801525e-07, -0.2965585, -0.33516455, -0.1363163)
+[node name="CSGBox3D" type="CSGBox3D" parent="L2_Walls/L2wall4" unique_id=1515462501]
+transform = Transform3D(0.20673275, 0, 0, 0, 0.7077457, 0, 2.842171e-14, 0, 2.5905805, -0.28677016, -0.15823567, 0.5172882)
 operation = 2
-sides = 15
+size = Vector3(0.9723511, 0.99108887, 1)
 
 [node name="L2wall2" type="CSGBox3D" parent="L2_Walls" unique_id=90569462]
 transform = Transform3D(-2.13253e-06, 0, 0.9999999, 0, 11.366262, 0, -48.7866, 0, -4.3711385e-08, 14.122503, 17.835768, 5.386122)
@@ -950,3 +954,6 @@ transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 28.1
 
 [node name="Light_Bulb_Off2" parent="." unique_id=900537481 instance=ExtResource("6_bu6dc")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 39.840744, 20.929832, -1.5627663)
+
+[node name="Light_Bulb_On2" parent="." unique_id=256540176 instance=ExtResource("5_xi0mm")]
+transform = Transform3D(1, 0, 0, 0, -4.3711385e-08, -0.99999994, 0, 0.99999994, -4.3711385e-08, 33.510723, 9.89375, -11.309615)
