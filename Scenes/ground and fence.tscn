@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://b7hvy32j856w" path="res://Assets/textures/housefoundation.png" id="2_g6kap"]
 [ext_resource type="Texture2D" uid="uid://cu06gnd0r6b5" path="res://Assets/textures/fence2d.png" id="2_wgg7l"]
 [ext_resource type="Texture2D" uid="uid://b2k2an0axjj33" path="res://Assets/textures/grass2D-2.png" id="3_g6kap"]
+[ext_resource type="PackedScene" uid="uid://cxfgqlxa7rdye" path="res://Scenes/light_bulbs.tscn" id="5_vptk3"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_g6kap"]
 
@@ -129,30 +130,14 @@ transform = Transform3D(-1.8796165e-06, 0, 0.40263513, 0, 7.1280603, 0, -43.0006
 use_collision = true
 size = Vector3(2.310669, 1, 1)
 
-[node name="fence lightbulb4" type="CSGSphere3D" parent="." unique_id=1847382837]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7.0023108, -48.771694)
+[node name="Light_Bulb_On" parent="." unique_id=19867042 instance=ExtResource("5_vptk3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.66, -48.552)
 
-[node name="OmniLight3D" type="OmniLight3D" parent="fence lightbulb4" unique_id=1265486519]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.3788385, 0)
-omni_range = 13.0
+[node name="Light_Bulb_On2" parent="." unique_id=1347027782 instance=ExtResource("5_vptk3")]
+transform = Transform3D(1, 0, 0, 0, -1, 8.742278e-08, 0, -8.742278e-08, -1, 0, 6.66, 48.43481)
 
-[node name="fence lightbulb2" type="CSGSphere3D" parent="." unique_id=423979554]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7.07174, 48.35773)
+[node name="Light_Bulb_On3" parent="." unique_id=1989342000 instance=ExtResource("5_vptk3")]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, -48.341465, 6.66, 0)
 
-[node name="OmniLight3D" type="OmniLight3D" parent="fence lightbulb2" unique_id=83282549]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.6573515, 0)
-omni_range = 13.0
-
-[node name="fence lightbulb3" type="CSGSphere3D" parent="." unique_id=1490173761]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48.203293, 7.208659, 0)
-
-[node name="OmniLight3D" type="OmniLight3D" parent="fence lightbulb3" unique_id=1782591357]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.2700272, 0)
-omni_range = 13.0
-
-[node name="fence lightbulb" type="CSGSphere3D" parent="." unique_id=1485416480]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 48.26622, 7.072, 0)
-
-[node name="OmniLight3D" type="OmniLight3D" parent="fence lightbulb" unique_id=1310897393]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.6573515, 0)
-omni_range = 13.0
+[node name="Light_Bulb_On4" parent="." unique_id=1449366176 instance=ExtResource("5_vptk3")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 48.211018, 6, 0)

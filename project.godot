@@ -23,4 +23,4 @@ config/icon="res://icon.svg"
 
 textures/canvas_textures/default_texture_filter=0
 rendering_device/driver.windows="d3d12"
-environment/defaults/default_clear_color=Color(0.039268773, 0.27416945, 0.48871994, 1)
+environment/defaults/default_clear_color=Color(0.013814019, 0.17376906, 0.32959956, 1)

@@ -1,93 +1,194 @@
 [gd_scene format=3 uid="uid://d3wj3xfg85o67"]
 
+[ext_resource type="Texture2D" uid="uid://c6seqvpmrpv60" path="res://Assets/textures/table_texture.png" id="1_e3172"]
+[ext_resource type="Texture2D" uid="uid://b7hvy32j856w" path="res://Assets/textures/housefoundation.png" id="2_8m0vr"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ofhvc"]
+albedo_color = Color(1, 0.5942291, 0.5341389, 1)
+albedo_texture = ExtResource("2_8m0vr")
+metallic_specular = 0.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_e3172"]
+albedo_color = Color(0.98066705, 0.6810244, 0.54006046, 1)
+albedo_texture = ExtResource("1_e3172")
+metallic_specular = 0.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tv5mn"]
+albedo_color = Color(0.9091407, 0.9091403, 0, 1)
+albedo_texture = ExtResource("2_8m0vr")
+metallic_specular = 0.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rg8ce"]
+albedo_color = Color(0.17923622, 0.9275334, 0, 1)
+albedo_texture = ExtResource("2_8m0vr")
+metallic_specular = 0.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_513b8"]
+albedo_color = Color(0.4894482, 0.99694735, 0.9999997, 1)
+albedo_texture = ExtResource("1_e3172")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4ir7g"]
+albedo_color = Color(0.4431448, 0.8066667, 0.9999997, 1)
+albedo_texture = ExtResource("1_e3172")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rekxl"]
+albedo_color = Color(0.57123643, 0.6476321, 1, 1)
+albedo_texture = ExtResource("1_e3172")
+metallic_specular = 0.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8m0vr"]
+albedo_color = Color(0.9809008, 0.6451633, 0.6757188, 1)
+albedo_texture = ExtResource("1_e3172")
+metallic_specular = 0.0
+rim = 0.25
+rim_tint = 0.0
+subsurf_scatter_enabled = true
+subsurf_scatter_strength = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v13fa"]
+albedo_color = Color(0.99999994, 0.41367385, 0.15982151, 1)
+albedo_texture = ExtResource("2_8m0vr")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dhs67"]
+albedo_color = Color(0.8203924, 0.7904641, 0, 1)
+albedo_texture = ExtResource("1_e3172")
+metallic = 1.0
+metallic_specular = 0.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qrswn"]
+albedo_color = Color(0.52715063, 1, 0.48013812, 1)
+albedo_texture = ExtResource("1_e3172")
+metallic_specular = 1.0
+roughness = 0.0
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0qd3y"]
+albedo_color = Color(0.9091407, 0.9091403, 0, 1)
+albedo_texture = ExtResource("2_8m0vr")
+metallic_specular = 0.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6tm3y"]
+albedo_color = Color(0.46254948, 0.9103257, 0, 1)
+albedo_texture = ExtResource("2_8m0vr")
+metallic_specular = 0.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_57y43"]
+albedo_color = Color(0.9068956, 0.5067098, 9.62615e-07, 1)
+albedo_texture = ExtResource("1_e3172")
+metallic_specular = 0.0
+
 [node name="temporary stairs" type="Node3D" unique_id=877652557]
 
-[node name="Platform" type="CSGCylinder3D" parent="." unique_id=1768966526]
-transform = Transform3D(5.00353, 0, 0, 0, 0.3512135, 0, 0, 0, 5.0036564, -12, 1.0645007, -15.796587)
+[node name="red2" type="CSGCylinder3D" parent="." unique_id=1768966526]
+transform = Transform3D(4.3387184, 0, 2.492217, 0, 0.3512135, 0, -2.4921541, 0, 4.338828, -12, 1.0645007, -15.796587)
+material_override = SubResource("StandardMaterial3D_ofhvc")
 use_collision = true
 sides = 15
 
-[node name="Platforms2" type="CSGCylinder3D" parent="." unique_id=1437339987]
+[node name="orange" type="CSGCylinder3D" parent="." unique_id=1437339987]
 transform = Transform3D(5.00353, 0, 0, 0, 0.34969705, 0, 0, 0, 5.0036564, -12, 1.741, -14.333632)
+material_override = SubResource("StandardMaterial3D_e3172")
 use_collision = true
 sides = 15
 
-[node name="Platforms3" type="CSGCylinder3D" parent="." unique_id=409997801]
-transform = Transform3D(5.00353, 0, 0, 0, 0.35180372, 0, 0, 0, 5.0036564, -12, 2.176, -12.6193695)
+[node name="yellow2" type="CSGCylinder3D" parent="." unique_id=409997801]
+transform = Transform3D(5.00353, 0, 0, 0, 0.35180372, 0, 0, 0, 5.0036564, -12, 2.3327756, -12.6193695)
+material_override = SubResource("StandardMaterial3D_tv5mn")
 use_collision = true
 sides = 15
 
-[node name="Platforms4" type="CSGCylinder3D" parent="." unique_id=524978063]
-transform = Transform3D(5.00353, 0, 0, 0, 0.354667, 0, 0, 0, 5.0036564, -12, 2.682, -11.111679)
+[node name="green" type="CSGCylinder3D" parent="." unique_id=524978063]
+transform = Transform3D(3.1414201, 0, -3.8945544, 0, 0.35466698, 0, 3.8944561, 0, 3.1414995, -12, 2.9090583, -11.111679)
+material_override = SubResource("StandardMaterial3D_rg8ce")
 use_collision = true
 sides = 15
 
-[node name="Platforms5" type="CSGCylinder3D" parent="." unique_id=260081178]
-transform = Transform3D(5.00353, 0, 0, 0, 0.3517628, 0, 0, 0, 5.0036564, -12, 3.3588288, -9.73027)
+[node name="blue" type="CSGCylinder3D" parent="." unique_id=260081178]
+transform = Transform3D(5.00353, 0, 0, 0, 0.3517628, 0, 0, 0, 5.0036564, -12, 3.5342066, -9.73027)
+material_override = SubResource("StandardMaterial3D_513b8")
 use_collision = true
 sides = 15
 
-[node name="Platforms6" type="CSGCylinder3D" parent="." unique_id=101341380]
-transform = Transform3D(5.00353, 0, 0, 0, 0.3498693, 0, 0, 0, 5.0036564, -12, 4.0818233, -7.4210153)
+[node name="indigo" type="CSGCylinder3D" parent="." unique_id=101341380]
+transform = Transform3D(1.479515, 0.0027535642, -4.779743, -0.00024473024, 0.3498574, 0.041147776, 4.779784, -0.00083442003, 1.4795042, -12, 4.223357, -8.314213)
+material_override = SubResource("StandardMaterial3D_4ir7g")
 use_collision = true
 sides = 15
 
-[node name="Platforms7" type="CSGCylinder3D" parent="." unique_id=1832607442]
-transform = Transform3D(5.00353, 0, 0, 0, 0.35644516, 0, 0, 0, 5.0036564, -12, 4.7709217, -6.5684814)
+[node name="violet" type="CSGCylinder3D" parent="." unique_id=1832607442]
+transform = Transform3D(5.00353, 0, 0, 0, 0.35644516, 0, 0, 0, 5.0036564, -12, 4.9287977, -6.4682484)
+material_override = SubResource("StandardMaterial3D_rekxl")
 use_collision = true
 sides = 15
 
-[node name="Platforms8" type="CSGCylinder3D" parent="." unique_id=1025566370]
-transform = Transform3D(5.00353, 0, 0, 0, 0.35352847, 0, 0, 0, 5.0036564, -12, 8.359716, -0.029266357)
+[node name="red" type="CSGCylinder3D" parent="." unique_id=376696963]
+transform = Transform3D(5.00353, 0, 0, 0, 0.3512135, 0, 0, 0, 5.0036564, -12, 5.6197705, -4.751788)
+material_override = SubResource("StandardMaterial3D_8m0vr")
 use_collision = true
 sides = 15
 
-[node name="Platforms9" type="CSGCylinder3D" parent="." unique_id=324984335]
-transform = Transform3D(5.00353, 0, 0, 0, 0.35568756, 0, 0, 0, 5.0036564, -12, 5.493041, -4.7126427)
+[node name="orange2" type="CSGCylinder3D" parent="." unique_id=688674470]
+transform = Transform3D(4.4183464, 0, 2.3481488, 0, 0.34969705, 0, -2.3480897, 0, 4.418459, -12, 6.284876, -3.4917731)
+material_override = SubResource("StandardMaterial3D_v13fa")
 use_collision = true
 sides = 15
 
-[node name="Platforms10" type="CSGCylinder3D" parent="." unique_id=1646769246]
-transform = Transform3D(5.00353, 0, 0, 0, 0.35222977, 0, 0, 0, 5.0036564, -12, 6.917118, -2.3817196)
+[node name="yellow" type="CSGCylinder3D" parent="." unique_id=375711753]
+transform = Transform3D(5.00353, 0, 0, 0, 0.35180372, 0, 0, 0, 5.0036564, -12, 6.9901576, -2.3655958)
+material_override = SubResource("StandardMaterial3D_dhs67")
 use_collision = true
 sides = 15
 
-[node name="Platforms11" type="CSGCylinder3D" parent="." unique_id=1148415036]
-transform = Transform3D(5.00353, 0, 0, 0, 0.35217875, 0, 0, 0, 5.0036564, -12, 9.761776, 1.7402654)
+[node name="green2" type="CSGCylinder3D" parent="." unique_id=1947362617]
+transform = Transform3D(5.00353, 0, 0, 0, 0.354667, 0, 0, 0, 5.0036564, -12, 7.683856, -1.0600338)
+material_override = SubResource("StandardMaterial3D_qrswn")
 use_collision = true
 sides = 15
 
-[node name="Platforms12" type="CSGCylinder3D" parent="." unique_id=235627296]
-transform = Transform3D(5.00353, 0, 0, 0, 0.35043064, 0, 0, 0, 5.0036564, -11.185911, 10.425101, 2.2490864)
+[node name="blue2" type="CSGCylinder3D" parent="." unique_id=33495953]
+transform = Transform3D(4.505114, 0, -2.1770391, 0, 0.35176283, 0, 2.1769843, 0, 4.5052285, -12, 8.366271, -0.0033237934)
+material_override = SubResource("StandardMaterial3D_513b8")
 use_collision = true
 sides = 15
 
-[node name="Platforms13" type="CSGCylinder3D" parent="." unique_id=876864086]
-transform = Transform3D(5.00353, 0, 0, 0, 0.35208338, 0, 0, 0, 5.0036564, -12, 9.061169, 0.96610975)
+[node name="indigo2" type="CSGCylinder3D" parent="." unique_id=277702529]
+transform = Transform3D(4.7453537, 0, -1.586524, 0, 0.3498693, 0, 1.586484, 0, 4.7454734, -12, 9.047529, 0.87667036)
+material_override = SubResource("StandardMaterial3D_4ir7g")
 use_collision = true
 sides = 15
 
-[node name="Platforms14" type="CSGCylinder3D" parent="." unique_id=1554951509]
-transform = Transform3D(5.00353, 0, 0, 0, 0.3587979, 0, 0, 0, 5.0036564, -12, 7.6229715, -1.0694599)
+[node name="violet2" type="CSGCylinder3D" parent="." unique_id=191900879]
+transform = Transform3D(5.00353, 0, 0, 0, 0.35644516, 0, 0, 0, 5.0036564, -12, 9.747223, 1.7399759)
+material_override = SubResource("StandardMaterial3D_rekxl")
 use_collision = true
 sides = 15
 
-[node name="Platforms15" type="CSGCylinder3D" parent="." unique_id=391066368]
-transform = Transform3D(5.00353, 0, 0, 0, 0.35590655, 0, 0, 0, 5.0036564, -12, 6.1839733, -3.4409728)
+[node name="red3" type="CSGCylinder3D" parent="." unique_id=1520720081]
+transform = Transform3D(5.00353, 0, 0, 0, 0.3512135, 0, 0, 0, 5.0036564, -11.198313, 10.431563, 2.3027182)
+material_override = SubResource("StandardMaterial3D_8m0vr")
 use_collision = true
 sides = 15
 
-[node name="Platforms16" type="CSGCylinder3D" parent="." unique_id=274618457]
-transform = Transform3D(5.00353, 0, 0, 0, 0.35628545, 0, 0, 0, 5.0036564, -9.7029, 11.152463, 2.6230202)
+[node name="orange3" type="CSGCylinder3D" parent="." unique_id=1607963713]
+transform = Transform3D(5.00353, 0, 0, 0, 0.34969705, 0, 0, 0, 5.0036564, -9.684683, 11.148704, 2.6080775)
+material_override = SubResource("StandardMaterial3D_e3172")
 use_collision = true
 sides = 15
 
-[node name="Platforms17" type="CSGCylinder3D" parent="." unique_id=605212078]
-transform = Transform3D(5.00353, 0, 0, 0, 0.35628545, 0, 0, 0, 5.0036564, -8.64872, 11.863581, 2.6230202)
+[node name="yellow3" type="CSGCylinder3D" parent="." unique_id=510890081]
+transform = Transform3D(4.582247, 0, -2.009609, 0, 0.35180372, 0, 2.0095582, 0, 4.5823627, -8.522689, 11.773453, 2.5757942)
+material_override = SubResource("StandardMaterial3D_0qd3y")
 use_collision = true
 sides = 15
 
-[node name="Platforms18" type="CSGCylinder3D" parent="." unique_id=188603776]
-transform = Transform3D(5.00353, 0, 0, 0, 0.35628545, 0, 0, 0, 5.0036564, -7.5998163, 12.543146, 2.6230202)
+[node name="green3" type="CSGCylinder3D" parent="." unique_id=1685877960]
+transform = Transform3D(4.5290008, 0, 2.1268966, 0, 0.35466698, 0, -2.1268427, 0, 4.529115, -7.4507165, 12.415701, 2.6199832)
+material_override = SubResource("StandardMaterial3D_6tm3y")
 use_collision = true
 sides = 15
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="." unique_id=1905501719]
+transform = Transform3D(1, 0, 0, 0, 6.114431, 0, 0, 0, 1, -12.239131, 3.9929185, 0.6979389)
+material_override = SubResource("StandardMaterial3D_57y43")
+use_collision = true
+height = 1.6655273

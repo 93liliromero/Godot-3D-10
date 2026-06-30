@@ -21,6 +21,10 @@ roughness = 0.1
 albedo_texture = ExtResource("1_4tvgf")
 emission_enabled = true
 emission_energy_multiplier = 5.0
+rim_enabled = true
+rim_tint = 1.0
+subsurf_scatter_enabled = true
+subsurf_scatter_strength = 1.0
 
 [node name="Light_Bulb_On" type="Node3D" unique_id=19867042]
 

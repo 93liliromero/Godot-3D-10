@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://3ynryp64hpms" path="res://Assets/textures/glass_pane.png" id="4_xi0mm"]
 [ext_resource type="PackedScene" uid="uid://cxfgqlxa7rdye" path="res://Scenes/light_bulbs.tscn" id="5_xi0mm"]
 [ext_resource type="PackedScene" uid="uid://dpmht5tw8ti8c" path="res://Scenes/light_bulb_off.tscn" id="6_bu6dc"]
+[ext_resource type="PackedScene" uid="uid://7ajfre03d5ho" path="res://Scenes/stairs.tscn" id="7_l3jqw"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ga0bc"]
 albedo_texture = ExtResource("4_xi0mm")
@@ -164,9 +165,11 @@ clearcoat_roughness = 0.0
 [node name="house" type="Node3D" unique_id=22554623]
 
 [node name="all_lightbulbs" type="Node3D" parent="." unique_id=1384997407]
+visible = false
 
 [node name="lightbulb" type="CSGSphere3D" parent="all_lightbulbs" unique_id=1860770162]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.164685, 9.56128, 6.5902996)
+visible = false
 
 [node name="OmniLight3D" type="OmniLight3D" parent="all_lightbulbs/lightbulb" unique_id=497484578]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.6657534, 0)
@@ -184,23 +187,10 @@ omni_range = 13.0
 
 [node name="lightbulb3" type="CSGSphere3D" parent="all_lightbulbs" unique_id=1674843069]
 transform = Transform3D(1, 0, 0, 0, 0.9981476, 0.060839415, 0, -0.060839415, 0.9981476, 8.834131, 9.4023485, -16.195793)
+visible = false
 
 [node name="OmniLight3D" type="OmniLight3D" parent="all_lightbulbs/lightbulb3" unique_id=537866194]
 transform = Transform3D(1, 0, 0, 0, 0.59451395, 0.8040852, 0, -0.8040852, 0.59451395, 0, -1.5075159, -0.085969925)
-omni_range = 13.0
-
-[node name="lightbulb8" type="CSGSphere3D" parent="all_lightbulbs" unique_id=271509198]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.633818, 22.38055, -35.085083)
-
-[node name="OmniLight3D" type="OmniLight3D" parent="all_lightbulbs/lightbulb8" unique_id=1281253802]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.3788385, 0)
-omni_range = 13.0
-
-[node name="lightbulb9" type="CSGSphere3D" parent="all_lightbulbs" unique_id=712602705]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.7573166, 10.432236, -8.77182)
-
-[node name="OmniLight3D" type="OmniLight3D" parent="all_lightbulbs/lightbulb9" unique_id=1572262848]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.3788385, 0)
 omni_range = 13.0
 
 [node name="lightbulb10" type="CSGSphere3D" parent="all_lightbulbs" unique_id=1968568608]
@@ -208,13 +198,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.22297, 23.149084, -18.04933
 visible = false
 
 [node name="OmniLight3D" type="OmniLight3D" parent="all_lightbulbs/lightbulb10" unique_id=1779296699]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.3788385, 0)
-omni_range = 13.0
-
-[node name="lightbulb11" type="CSGSphere3D" parent="all_lightbulbs" unique_id=1252588088]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.13861, 22.38055, -18.865944)
-
-[node name="OmniLight3D" type="OmniLight3D" parent="all_lightbulbs/lightbulb11" unique_id=1494394138]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.3788385, 0)
 omni_range = 13.0
 
@@ -733,6 +716,11 @@ material_override = SubResource("StandardMaterial3D_cx658")
 use_collision = true
 size = Vector3(1, 15.146265, 1)
 
+[node name="CSGBox3D" type="CSGBox3D" parent="Banisters/Outside/outside_beam2" unique_id=789803289]
+transform = Transform3D(1, 0, 0, 0, 1, 1.7497115e-13, 0, 5.48539e-12, 0.999977, 0, 1.8774903, 0.01763916)
+operation = 2
+size = Vector3(1, 0.6414337, 1.5430908)
+
 [node name="outside_beam3" type="CSGBox3D" parent="Banisters/Outside" unique_id=165318957]
 transform = Transform3D(-6.0612e-08, -3.2499998, -3.2855286e-08, 0, -1.42062e-07, 0.75164133, -1.386641, 1.42062e-07, 1.4361502e-15, 20.25298, 15.422337, 15.339605)
 material_override = SubResource("StandardMaterial3D_cx658")
@@ -762,6 +750,11 @@ transform = Transform3D(-0.57024217, 2.6396637e-07, 2.8723004e-15, 0, -1.3198319
 material_override = SubResource("StandardMaterial3D_lv2cm")
 use_collision = true
 size = Vector3(1, 16.306883, 1)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Banisters/Outside/outside_beam7" unique_id=2107224715]
+transform = Transform3D(1, 1.7337243e-12, 2.4987472e-20, 1.4210855e-14, 1.0000077, 3.1974423e-14, 8.4703295e-22, 2.1316282e-13, 1.0000077, 0, -2.1668835, 0)
+operation = 2
+size = Vector3(1, 0.7788086, 1)
 
 [node name="outside_beam8" type="CSGBox3D" parent="Banisters/Outside" unique_id=1143224608]
 transform = Transform3D(-2.4926075e-08, -3.0194235, -3.2855286e-08, 0, -1.3198319e-07, 0.75164133, -0.57024217, 1.3198319e-07, 1.4361502e-15, 19.658169, 13.777342, 15.492325)
@@ -947,7 +940,7 @@ transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 34.6
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.800478, 9.144259, 16.99104)
 
 [node name="Light_Bulb_Off" parent="." unique_id=650262192 instance=ExtResource("6_bu6dc")]
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 7.8814173, 22.351696, -17.781939)
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 9.181428, 22.351696, -11.50985)
 
 [node name="Light_Bulb_On" parent="." unique_id=1182135921 instance=ExtResource("5_xi0mm")]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 28.108606, 22.409939, 3.0793533)
@@ -957,3 +950,24 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 39.8
 
 [node name="Light_Bulb_On2" parent="." unique_id=256540176 instance=ExtResource("5_xi0mm")]
 transform = Transform3D(1, 0, 0, 0, -4.3711385e-08, -0.99999994, 0, 0.99999994, -4.3711385e-08, 33.510723, 9.89375, -11.309615)
+
+[node name="Light_Bulb_Off3" parent="." unique_id=90529382 instance=ExtResource("6_bu6dc")]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 30.910982, 22.396389, -25.690315)
+
+[node name="Light_Bulb_Off4" parent="." unique_id=777890987 instance=ExtResource("6_bu6dc")]
+transform = Transform3D(1, 0, 0, 0, -1, 8.742278e-08, 0, -8.742278e-08, -1, 20.173134, 21.919554, -35.01803)
+
+[node name="Light_Bulb_Off5" parent="." unique_id=1737392883 instance=ExtResource("6_bu6dc")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -5.257761, 8.735208, -6.8675156)
+
+[node name="Light_Bulb_Off6" parent="." unique_id=557644914 instance=ExtResource("6_bu6dc")]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 11.10398, 9.8921995, 7.1401405)
+
+[node name="Light_Bulb_On3" parent="." unique_id=316059820 instance=ExtResource("5_xi0mm")]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 8.794636, 10.038452, -15.865819)
+
+[node name="Light_Bulb_Off7" parent="." unique_id=965264861 instance=ExtResource("6_bu6dc")]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 34.28888, 9.9609585, 7.2878714)
+
+[node name="stairs" parent="." unique_id=1102949698 instance=ExtResource("7_l3jqw")]
+transform = Transform3D(3.0005162, 0, 0, 0, 3.342828, 0, 0, 0, 3.1645825, 5.7581577, 0.73518753, -30.313486)

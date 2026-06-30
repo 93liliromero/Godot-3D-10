@@ -1,0 +1,78 @@
+[gd_scene format=3 uid="uid://7ajfre03d5ho"]
+
+[node name="stairs" type="Node3D" unique_id=1102949698]
+
+[node name="bottom_steps" type="Node3D" parent="." unique_id=1164639169]
+
+[node name="step_1" type="CSGBox3D" parent="bottom_steps" unique_id=2019420864]
+transform = Transform3D(1.0051088, 0, 0, 0, 1.0067716, 0, 0, 0, 2, 0, 0.24849758, 0)
+use_collision = true
+size = Vector3(1, 0.50634766, 1)
+
+[node name="step_2" type="CSGBox3D" parent="bottom_steps" unique_id=583363356]
+transform = Transform3D(1.0051088, 0, 0, 0, 1.0067716, 0, 0, 0, 2, -0.5178446, 0.7552947, 0)
+use_collision = true
+size = Vector3(1, 0.49316406, 1)
+
+[node name="step_3" type="CSGBox3D" parent="bottom_steps" unique_id=134968996]
+transform = Transform3D(1.0051088, 0, 0, 0, 1.0067716, 0, 0, 0, 2, -1.0072341, 1.2685028, 0)
+use_collision = true
+size = Vector3(1, 0.5058594, 1)
+
+[node name="step_4" type="CSGBox3D" parent="bottom_steps" unique_id=1312160039]
+transform = Transform3D(1.0051088, 0, 0, 0, 1.0067716, 0, 0, 0, 2, -2.0129063, 1.7605317, 0)
+use_collision = true
+size = Vector3(2.0004883, 0.46691895, 1)
+
+[node name="top_steps" type="Node3D" parent="." unique_id=125727915]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -2.0126784, 1.4950557, 1.5046219)
+
+[node name="step_1" type="CSGBox3D" parent="top_steps" unique_id=1259928115]
+transform = Transform3D(1.0051088, 0, 0, 0, 1.0067716, 0, 0, 0, 2, 0, 0.2691443, 0)
+use_collision = true
+size = Vector3(1, 0.46533203, 1)
+
+[node name="step_2" type="CSGBox3D" parent="top_steps" unique_id=356533382]
+transform = Transform3D(1.0051088, 0, 0, 0, 1.0067716, 0, 0, 0, 2, -0.5178449, 0.75431156, 0)
+use_collision = true
+size = Vector3(1, 0.4951172, 1)
+
+[node name="step_3" type="CSGBox3D" parent="top_steps" unique_id=1203305698]
+transform = Transform3D(1.0051088, 0, 0, 0, 1.0067716, 0, 0, 0, 2, -1.0072343, 1.2567046, 0)
+use_collision = true
+size = Vector3(1, 0.5292969, 1)
+
+[node name="step_4" type="CSGBox3D" parent="top_steps" unique_id=1520580965]
+transform = Transform3D(1.0051088, 0, 0, 0, 1.0067716, 0, 0, 0, 2, -1.5101068, 1.7518058, -4.7683716e-07)
+use_collision = true
+size = Vector3(1, 0.48425293, 1)
+
+[node name="extra_steps" type="Node3D" parent="." unique_id=1733505347]
+
+[node name="step_6" type="CSGBox3D" parent="extra_steps" unique_id=426431925]
+transform = Transform3D(0.5361789, 0, 0, 0, 0.5630784, 0, 0, 0, 2, -0.0050875545, 0.4737544, 0)
+use_collision = true
+
+[node name="step_7" type="CSGBox3D" parent="extra_steps" unique_id=1702526089]
+transform = Transform3D(0.5361789, 0, 0, 0, 0.5630784, 0, 0, 0, 2, 0.50939846, -0.0024758875, 0)
+use_collision = true
+
+[node name="step_8" type="CSGBox3D" parent="extra_steps" unique_id=1186232943]
+transform = Transform3D(0.5361789, 0, 0, 0, 0.5630784, 0, 0, 0, 2, -0.5079841, 1.0034027, 0)
+use_collision = true
+
+[node name="step_9" type="CSGBox3D" parent="extra_steps" unique_id=688713765]
+transform = Transform3D(0.5361789, 0, 0, 0, 0.5630784, 0, 0, 0, 2, -1.0075825, 1.5196545, 0)
+use_collision = true
+
+[node name="step_10" type="CSGBox3D" parent="extra_steps" unique_id=855158482]
+transform = Transform3D(-2.3437124e-08, 0, 1.9999999, 0, 0.5630784, 0, -0.5361789, 0, -8.742277e-08, -2.017187, 1.9954436, 1.5194131)
+use_collision = true
+
+[node name="step_11" type="CSGBox3D" parent="extra_steps" unique_id=1558163551]
+transform = Transform3D(-2.3437124e-08, 0, 1.9999999, 0, 0.5630784, 0, -0.5361789, 0, -8.742277e-08, -2.017187, 2.4986806, 2.0064054)
+use_collision = true
+
+[node name="step_12" type="CSGBox3D" parent="extra_steps" unique_id=806589453]
+transform = Transform3D(-2.3437124e-08, 0, 1.9999999, 0, 0.5630784, 0, -0.5361789, 0, -8.742277e-08, -2.017187, 3.0207865, 2.508919)
+use_collision = true
