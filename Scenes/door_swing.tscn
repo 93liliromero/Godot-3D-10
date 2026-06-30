@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://rovchyj20ju" path="res://Scripts/door_swing.gd" id="1_babph"]
 [ext_resource type="PackedScene" uid="uid://ccsf3266k7vkv" path="res://Scenes/door.tscn" id="1_fmdmh"]
+[ext_resource type="AudioStream" uid="uid://c32phtnhjutek" path="res://Assets/Sounds/Door_two.wav" id="3_rhlb6"]
 
 [sub_resource type="Animation" id="Animation_fmdmh"]
 resource_name = "DOOR_SWING"
@@ -77,5 +78,8 @@ libraries/ = SubResource("AnimationLibrary_okqol")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=801101208]
 shape = SubResource("BoxShape3D_mgsaf")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." unique_id=193569872]
+stream = ExtResource("3_rhlb6")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
