@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://bf48dlu8vqqga"]
+
+[ext_resource type="PackedScene" uid="uid://bsbs7qf87rckj" path="res://Assets/models/table.glb" id="1_ix8et"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_ix8et"]
+radius = 0.453125
+
+[node name="table" type="Node3D" unique_id=1180917980]
+
+[node name="table" parent="." unique_id=2111811991 instance=ExtResource("1_ix8et")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.67189515, 0, -1.1531143)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="table" unique_id=1522378490]
+transform = Transform3D(6.170234, 0, 0, 0, 0.14535953, 0, 0, 0, 5.796216, 0, 1.1904833, 0)
+shape = SubResource("CylinderShape3D_ix8et")

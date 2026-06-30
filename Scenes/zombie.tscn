@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://bxquhmmm4t3lr"]
+
+[ext_resource type="PackedScene" uid="uid://jpmh25x5vpn7" path="res://Assets/models/zombie/zombie.glb" id="1_h3kin"]
+
+[node name="Zombie" type="Node3D" unique_id=1629781794]
+
+[node name="zombie" parent="." unique_id=1254689521 instance=ExtResource("1_h3kin")]
+
+[node name="Area3D" type="Area3D" parent="." unique_id=1322586120]
