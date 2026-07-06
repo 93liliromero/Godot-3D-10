@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://cxfgqlxa7rdye" path="res://Scenes/light_bulbs.tscn" id="7_6bp64"]
 [ext_resource type="PackedScene" uid="uid://bxquhmmm4t3lr" path="res://Scenes/zombie.tscn" id="8_344ge"]
 [ext_resource type="PackedScene" uid="uid://bf48dlu8vqqga" path="res://Scenes/table.tscn" id="9_ynf5e"]
+[ext_resource type="PackedScene" uid="uid://yuais5uo63mw" path="res://Scenes/snow.tscn" id="10_hptm8"]
 
 [node name="Main" type="Node3D" unique_id=524929674]
 
@@ -65,3 +66,15 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.165656, 1.2332437, -44.466
 
 [node name="table" parent="." unique_id=1180917980 instance=ExtResource("9_ynf5e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.993593, 2.5370634, 0.48706913)
+
+[node name="Snow" parent="." unique_id=1774537833 instance=ExtResource("10_hptm8")]
+transform = Transform3D(0.86068577, 0, 0, 0, 4.4031014, 0, 0, 0, 4.6913624, 37.58667, 26.885649, 0)
+
+[node name="Snow2" parent="." unique_id=559554888 instance=ExtResource("10_hptm8")]
+transform = Transform3D(0.91331226, 0, 0, 0, 4.4031014, 0, 0, 0, 4.6913624, -37.417236, 26.885649, 0)
+
+[node name="Snow3" parent="." unique_id=222705957 instance=ExtResource("10_hptm8")]
+transform = Transform3D(-3.9922153e-08, 0, 4.691362, 0, 4.4031014, 0, -0.9133124, 0, -2.0506594e-07, -0.3985138, 26.885649, -38.266533)
+
+[node name="Snow4" parent="." unique_id=1879199564 instance=ExtResource("10_hptm8")]
+transform = Transform3D(-3.9922153e-08, 0, 4.691362, 0, 4.4031014, 0, -0.9133124, 0, -2.0506594e-07, -0.3985138, 26.885649, 37.153587)

@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://yuais5uo63mw"]
+
+[ext_resource type="Texture2D" uid="uid://3ynryp64hpms" path="res://Assets/textures/glass_pane.png" id="1_rl54q"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_v2bou"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_vydo2"]
+emission_shape = 3
+emission_box_extents = Vector3(1, 1, 1)
+direction = Vector3(0, -1, 0)
+color = Color(0.7901936, 0.99795645, 0.9999997, 1)
+hue_variation_min = 0.10999998
+hue_variation_max = 0.10999998
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gpm4e"]
+albedo_texture = ExtResource("1_rl54q")
+metallic_specular = 0.0
+roughness = 0.0
+emission_enabled = true
+emission_energy_multiplier = 1.5
+subsurf_scatter_enabled = true
+subsurf_scatter_strength = 0.1
+
+[sub_resource type="SphereMesh" id="SphereMesh_v2bou"]
+material = SubResource("StandardMaterial3D_gpm4e")
+radius = 0.15
+height = 0.15
+
+[node name="Snow" type="Node3D" unique_id=1774537833]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1577472844]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=589891122]
+transform = Transform3D(12.71175, 0, 0, 0, 1, 0, 0, 0, 10.602877, 0, -6.786021, 0)
+transparency = 0.5
+mesh = SubResource("PlaneMesh_v2bou")
+
+[node name="GPUParticlesCollisionBox3D" type="GPUParticlesCollisionBox3D" parent="MeshInstance3D" unique_id=1790809138]
+
+[node name="snow" type="GPUParticles3D" parent="." unique_id=16643443]
+transform = Transform3D(12.122031, 0, 0, 0, 5.824122, 0, 0, 0, 10.146001, 0, 0, 0)
+amount = 1000
+lifetime = 2.0
+trail_enabled = true
+process_material = SubResource("ParticleProcessMaterial_vydo2")
+draw_pass_1 = SubResource("SphereMesh_v2bou")
