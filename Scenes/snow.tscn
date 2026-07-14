@@ -28,8 +28,6 @@ height = 0.15
 
 [node name="Snow" type="Node3D" unique_id=1774537833]
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1577472844]
-
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=589891122]
 transform = Transform3D(12.71175, 0, 0, 0, 1, 0, 0, 0, 10.602877, 0, -6.786021, 0)
 transparency = 0.5

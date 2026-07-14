@@ -35,6 +35,7 @@ transparency = 0.25
 [node name="OmniLight3D" type="OmniLight3D" parent="Light_Bulb_1" unique_id=2053389362]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.001, 0.2791808)
 light_energy = 10.0
+shadow_enabled = true
 omni_range = 13.0
 
 [node name="1" type="CSGCylinder3D" parent="." unique_id=812733741]
