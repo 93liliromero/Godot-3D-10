@@ -88,9 +88,11 @@ visible = false
 
 [node name="Snow3" parent="." unique_id=222705957 instance=ExtResource("10_hptm8")]
 transform = Transform3D(-3.9922153e-08, 0, 4.691362, 0, 4.4031014, 0, -0.9133124, 0, -2.0506594e-07, -0.3985138, 26.885649, -38.266533)
+visible = false
 
 [node name="Snow4" parent="." unique_id=1879199564 instance=ExtResource("10_hptm8")]
 transform = Transform3D(-3.9922153e-08, 0, 4.691362, 0, 4.4031014, 0, -0.9133124, 0, -2.0506594e-07, -0.3985138, 26.885649, 37.153587)
+visible = false
 
 [node name="LightmapGI" type="LightmapGI" parent="." unique_id=1831595503]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 42.789185, 0)
