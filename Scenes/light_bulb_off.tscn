@@ -32,7 +32,7 @@ transparency = 0.25
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.2736371)
 light_energy = 1.54
 shadow_enabled = true
-omni_range = 13.0
+omni_range = 20.0
 
 [node name="1" type="CSGCylinder3D" parent="." unique_id=698499828]
 transform = Transform3D(0.4108689, 0, 0, 0, -1.614932e-08, 0.39890227, 0, -0.3694534, -1.7436573e-08, 0, 0, -0.6715118)

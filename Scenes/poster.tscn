@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://b0wbp4h2e0lqf"]
+
+[ext_resource type="Texture2D" uid="uid://ctwb3lj48t3dx" path="res://Assets/textures/text_test.png" id="1_f5i7g"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_efwel"]
+albedo_texture = ExtResource("1_f5i7g")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_dywd2"]
+
+[node name="poster" type="Node3D" unique_id=1692583790]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=407321715]
+transform = Transform3D(0.9, 0, 0, 0, 0.9, 0, 0, 0, 0.028799998, 0, 0, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CSGBox3D" unique_id=1432512973]
+transform = Transform3D(-0.50159293, 8.742278e-08, 2.187069e-08, -2.1925324e-08, 1.9106855e-15, -0.5003431, -4.3850648e-08, -1, 9.559982e-16, 0, -2.3628123e-08, -0.54054844)
+material_override = SubResource("StandardMaterial3D_efwel")
+mesh = SubResource("PlaneMesh_dywd2")

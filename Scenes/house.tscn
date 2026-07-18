@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://cxfgqlxa7rdye" path="res://Scenes/light_bulbs.tscn" id="5_xi0mm"]
 [ext_resource type="PackedScene" uid="uid://dpmht5tw8ti8c" path="res://Scenes/light_bulb_off.tscn" id="6_bu6dc"]
 [ext_resource type="PackedScene" uid="uid://7ajfre03d5ho" path="res://Scenes/stairs.tscn" id="7_l3jqw"]
+[ext_resource type="PackedScene" uid="uid://b0wbp4h2e0lqf" path="res://Scenes/poster.tscn" id="8_gau5j"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ga0bc"]
 albedo_texture = ExtResource("4_xi0mm")
@@ -274,7 +275,7 @@ operation = 2
 sides = 15
 
 [node name="CSGCylinder3D3" type="CSGCylinder3D" parent="L1 Walls/L1wall7" unique_id=90468361]
-transform = Transform3D(0.19755268, 0, 0, 0, -4.8417905e-09, -0.5245752, 0, 1.2590088, -2.6062727e-07, -0.30553767, -0.083100975, -0.13631439)
+transform = Transform3D(0.19755268, 0, 0, 0, -4.8417905e-09, -0.5245752, 0, 1.2590083, -2.6062722e-07, -0.12612583, -0.009741902, -0.13631439)
 operation = 2
 sides = 15
 
@@ -843,7 +844,7 @@ use_collision = true
 size = Vector3(1.7768555, 1, 1)
 
 [node name="glass_pane3" type="CSGBox3D" parent="Winduhs" unique_id=691224007]
-transform = Transform3D(3.1959796, 0, 0, 0, 4.116154, 0, 0, 0, 0.15196282, 1.7625446, 5.2415934, -34.40937)
+transform = Transform3D(3.1959796, 0, 0, 0, 4.116154, 0, 0, 0, 0.15196282, 6.5956116, 5.7162695, -34.40937)
 material_override = SubResource("StandardMaterial3D_mukck")
 transparency = 0.77
 use_collision = true
@@ -971,3 +972,6 @@ transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 34.2
 
 [node name="stairs" parent="." unique_id=1102949698 instance=ExtResource("7_l3jqw")]
 transform = Transform3D(3.0005162, 0, 0, 0, 3.342828, 0, 0, 0, 3.1645825, 5.7581577, 0.73518753, -30.313486)
+
+[node name="poster" parent="." unique_id=1692583790 instance=ExtResource("8_gau5j")]
+transform = Transform3D(3.6186287, 0, 0, 0, 3.892249, 0, 0, 0, 1, -0.88958716, 5.877926, -2.4893541)
